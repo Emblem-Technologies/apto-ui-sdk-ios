@@ -61,15 +61,13 @@ private extension FormRowPhoneFieldView {
   private func layoutPhoneTextField() {
     contentView.addSubview(phoneTextField)
     phoneTextField.snp.makeConstraints { make in
-        
       if let label = self.label {
         make.top.equalTo(label.snp.bottom).offset(6)
       }
       else {
-        make.top.equalToSuperview().inset(-20)
-//        make.top.equalTo(label.snp.bottom).offset(6)
+        make.top.equalToSuperview().offset(20)
       }
-      make.left.right.bottom.equalToSuperview()
+      make.left.right.bottom.equalToSuperview().offset(20)
     }
   }
 }
