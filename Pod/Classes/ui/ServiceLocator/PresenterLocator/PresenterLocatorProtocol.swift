@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol PresenterLocatorProtocol {
+protocol PresenterLocatorProtocol {
   func fullScreenDisclaimerPresenter() -> FullScreenDisclaimerPresenterProtocol
   func countrySelectorPresenter() -> CountrySelectorPresenterProtocol
 

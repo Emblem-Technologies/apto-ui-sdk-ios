@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol ServiceLocatorProtocol: class {
+protocol ServiceLocatorProtocol: class {
   var moduleLocator: ModuleLocatorProtocol { get }
   var presenterLocator: PresenterLocatorProtocol { get }
   var interactorLocator: InteractorLocatorProtocol { get }

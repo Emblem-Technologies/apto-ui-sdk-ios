@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public protocol NetworkLocatorProtocol {
+protocol NetworkLocatorProtocol {
   func networkManager(baseURL: URL?,
                       certPinningConfig: [String: [String: AnyObject]]?,
                       allowSelfSignedCertificate: Bool) -> NetworkManagerProtocol
