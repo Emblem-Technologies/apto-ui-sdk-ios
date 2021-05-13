@@ -567,10 +567,10 @@
 		9D3BF36E264D6D0900BA9D8B /* ProgrammerAssertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3BF2F0264D6D0900BA9D8B /* ProgrammerAssertions.swift */; };
 		9D3BF36F264D6D0900BA9D8B /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3BF2F1264D6D0900BA9D8B /* ServiceError.swift */; };
 		9D3BF370264D6D0900BA9D8B /* ShiftSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3BF2F2264D6D0900BA9D8B /* ShiftSDK.swift */; };
-		9DF88513264D73AC005B45DC /* StorageLocatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF88511264D73AC005B45DC /* StorageLocatorProtocol.swift */; };
-		9DF88514264D73AC005B45DC /* StorageLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF88512264D73AC005B45DC /* StorageLocator.swift */; };
-		9DF88518264D7431005B45DC /* NetworkLocatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF88516264D7431005B45DC /* NetworkLocatorProtocol.swift */; };
-		9DF88519264D7431005B45DC /* NetworkLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF88517264D7431005B45DC /* NetworkLocator.swift */; };
+		9DF8851E264D803D005B45DC /* StorageLocatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8851C264D803D005B45DC /* StorageLocatorProtocol.swift */; };
+		9DF8851F264D803D005B45DC /* StorageLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8851D264D803D005B45DC /* StorageLocator.swift */; };
+		9DF88523264D804A005B45DC /* NetworkLocatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF88521264D804A005B45DC /* NetworkLocatorProtocol.swift */; };
+		9DF88524264D804A005B45DC /* NetworkLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF88522264D804A005B45DC /* NetworkLocator.swift */; };
 		F35298760DA2FCF1FE87D5CD /* Pods_EmblemAptoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF881AC9DFA80736BC0AD0D /* Pods_EmblemAptoSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -1321,10 +1321,10 @@
 		9D3BF2F1264D6D0900BA9D8B /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		9D3BF2F2264D6D0900BA9D8B /* ShiftSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftSDK.swift; sourceTree = "<group>"; };
 		9D3BF373264D6D1800BA9D8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		9DF88511264D73AC005B45DC /* StorageLocatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageLocatorProtocol.swift; sourceTree = "<group>"; };
-		9DF88512264D73AC005B45DC /* StorageLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageLocator.swift; sourceTree = "<group>"; };
-		9DF88516264D7431005B45DC /* NetworkLocatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLocatorProtocol.swift; sourceTree = "<group>"; };
-		9DF88517264D7431005B45DC /* NetworkLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLocator.swift; sourceTree = "<group>"; };
+		9DF8851C264D803D005B45DC /* StorageLocatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageLocatorProtocol.swift; sourceTree = "<group>"; };
+		9DF8851D264D803D005B45DC /* StorageLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageLocator.swift; sourceTree = "<group>"; };
+		9DF88521264D804A005B45DC /* NetworkLocatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLocatorProtocol.swift; sourceTree = "<group>"; };
+		9DF88522264D804A005B45DC /* NetworkLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLocator.swift; sourceTree = "<group>"; };
 		B7F071A94D3DA13312064F44 /* Pods-EmblemAptoSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmblemAptoSDK.debug.xcconfig"; path = "Target Support Files/Pods-EmblemAptoSDK/Pods-EmblemAptoSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1801,6 +1801,8 @@
 		9D3BED3B264D6A1C00BA9D8B /* ServiceLocator */ = {
 			isa = PBXGroup;
 			children = (
+				9DF88520264D804A005B45DC /* NetworkLocator */,
+				9DF8851B264D803D005B45DC /* StorageLocator */,
 				9D3BED3C264D6A1C00BA9D8B /* ServiceLocator.swift */,
 				9D3BED3D264D6A1C00BA9D8B /* ServiceLocatorProtocol.swift */,
 				9D3BED3E264D6A1C00BA9D8B /* ViewFactory */,
@@ -3230,8 +3232,6 @@
 		9D3BF263264D6D0900BA9D8B /* core */ = {
 			isa = PBXGroup;
 			children = (
-				9DF88515264D7431005B45DC /* NetworkLocator */,
-				9DF88510264D73AC005B45DC /* StorageLocator */,
 				9D3BF264264D6D0900BA9D8B /* Transport */,
 				9D3BF278264D6D0900BA9D8B /* Mapper */,
 				9D3BF27A264D6D0900BA9D8B /* Storage */,
@@ -3477,24 +3477,22 @@
 			path = "../../../../Downloads/apto-sdk-ios-master/Pod/Localization";
 			sourceTree = "<group>";
 		};
-		9DF88510264D73AC005B45DC /* StorageLocator */ = {
+		9DF8851B264D803D005B45DC /* StorageLocator */ = {
 			isa = PBXGroup;
 			children = (
-				9DF88511264D73AC005B45DC /* StorageLocatorProtocol.swift */,
-				9DF88512264D73AC005B45DC /* StorageLocator.swift */,
+				9DF8851C264D803D005B45DC /* StorageLocatorProtocol.swift */,
+				9DF8851D264D803D005B45DC /* StorageLocator.swift */,
 			);
-			name = StorageLocator;
-			path = ServiceLocator/StorageLocator;
+			path = StorageLocator;
 			sourceTree = "<group>";
 		};
-		9DF88515264D7431005B45DC /* NetworkLocator */ = {
+		9DF88520264D804A005B45DC /* NetworkLocator */ = {
 			isa = PBXGroup;
 			children = (
-				9DF88516264D7431005B45DC /* NetworkLocatorProtocol.swift */,
-				9DF88517264D7431005B45DC /* NetworkLocator.swift */,
+				9DF88521264D804A005B45DC /* NetworkLocatorProtocol.swift */,
+				9DF88522264D804A005B45DC /* NetworkLocator.swift */,
 			);
-			name = NetworkLocator;
-			path = ServiceLocator/NetworkLocator;
+			path = NetworkLocator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3769,7 +3767,7 @@
 				9D3BF22C264D6A1F00BA9D8B /* FetchTransactionsOperation.swift in Sources */,
 				9D3BF0B2264D6A1E00BA9D8B /* TransactionScreenEvents.swift in Sources */,
 				9D3BF143264D6A1E00BA9D8B /* FormRowSwitchView.swift in Sources */,
-				9DF88513264D73AC005B45DC /* StorageLocatorProtocol.swift in Sources */,
+				9DF8851E264D803D005B45DC /* StorageLocatorProtocol.swift in Sources */,
 				9D3BF233264D6A1F00BA9D8B /* BalanceViewProtocol.swift in Sources */,
 				9D3BF367264D6D0900BA9D8B /* CardOptions.swift in Sources */,
 				9D3BF241264D6A1F00BA9D8B /* AddMoneyViewModel.swift in Sources */,
@@ -3791,7 +3789,7 @@
 				9D3BF14E264D6A1E00BA9D8B /* FormRowDoubleButtonView.swift in Sources */,
 				9D3BF1BD264D6A1F00BA9D8B /* ExpirationDateValidator.swift in Sources */,
 				9D3BF185264D6A1F00BA9D8B /* GmailSender.swift in Sources */,
-				9DF88518264D7431005B45DC /* NetworkLocatorProtocol.swift in Sources */,
+				9DF88523264D804A005B45DC /* NetworkLocatorProtocol.swift in Sources */,
 				9D3BF0DC264D6A1E00BA9D8B /* DataCollectorStepSpec.swift in Sources */,
 				9D3BF0EF264D6A1E00BA9D8B /* CreditCardView.swift in Sources */,
 				9D3BF1E8264D6A1F00BA9D8B /* MonthlyStatementsReportInteractor.swift in Sources */,
@@ -3863,7 +3861,7 @@
 				9D3BF1DF264D6A1F00BA9D8B /* IssueCardInteractor.swift in Sources */,
 				9D3BF13B264D6A1E00BA9D8B /* FormRowBalanceRadioView.swift in Sources */,
 				9D3BF0D3264D6A1E00BA9D8B /* VerifyBirthDateViewControllerTheme2.swift in Sources */,
-				9DF88514264D73AC005B45DC /* StorageLocator.swift in Sources */,
+				9DF8851F264D803D005B45DC /* StorageLocator.swift in Sources */,
 				9D3BF177264D6A1F00BA9D8B /* KeyboardButton.swift in Sources */,
 				9D3BF175264D6A1F00BA9D8B /* KeyboardSelectableButton.swift in Sources */,
 				9D3BF2FA264D6D0900BA9D8B /* JSONRouter.swift in Sources */,
@@ -3959,7 +3957,7 @@
 				9D3BF10A264D6A1E00BA9D8B /* ServiceLocator.swift in Sources */,
 				9D3BF0CB264D6A1E00BA9D8B /* CameraView.swift in Sources */,
 				9D3BF21C264D6A1F00BA9D8B /* PhysicalCardActivationSucceedContract.swift in Sources */,
-				9DF88519264D7431005B45DC /* NetworkLocator.swift in Sources */,
+				9DF88524264D804A005B45DC /* NetworkLocator.swift in Sources */,
 				9D3BF1AB264D6A1F00BA9D8B /* TransferStatusDataSource.swift in Sources */,
 				9D3BF341264D6D0900BA9D8B /* Disclaimer.swift in Sources */,
 				9D3BF0FB264D6A1E00BA9D8B /* VerifyPasscodeModule.swift in Sources */,
