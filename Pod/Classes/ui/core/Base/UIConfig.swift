@@ -15,6 +15,7 @@ public enum StatusBarStyle: String, Equatable {
   case auto
 }
 
+@available(iOS 13.0, *)
 @objc open class UIConfig: NSObject {
   // Branding
   private let lightBranding: ParsedProjectBranding
@@ -183,6 +184,7 @@ public enum StatusBarStyle: String, Equatable {
   }
 }
 
+@available(iOS 13.0, *)
 private extension UIConfig {
   func setFonts(fontCustomizationOptions: FontCustomizationOptions?) {
     if let fontCustomizationOptions = fontCustomizationOptions {
