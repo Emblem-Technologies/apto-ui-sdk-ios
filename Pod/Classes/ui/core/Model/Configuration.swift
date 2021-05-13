@@ -124,6 +124,7 @@ open class ProjectConfiguration {
 }
 
 //Global variables
+@available(iOS 13.0, *)
 struct GlobalVariables {
     static let blue = UIColor(red:0.17, green:0.52, blue:0.94, alpha:1.0) //2B84F0 For Icon Creation on Web
     static let purple = UIColor.rbg(r: 161, g: 114, b: 255)
@@ -232,6 +233,8 @@ extension UIColor {
     
 }
 
+@available(iOS 12.0, *)
+@available(iOS 13.0, *)
 func purpleColorAdjust() -> UIColor {
     if let topViewController = UIViewController.currentViewController() {
         if topViewController.traitCollection.userInterfaceStyle == .light {
@@ -245,6 +248,8 @@ func purpleColorAdjust() -> UIColor {
     }
 }
 
+@available(iOS 12.0, *)
+@available(iOS 13.0, *)
 func backgroundAdjust() -> UIColor {
     if let topViewController = UIViewController.currentViewController() {
         if topViewController.traitCollection.userInterfaceStyle == .light {
@@ -283,5 +288,51 @@ func hexStringToUIColor (hex:String) -> UIColor {
         blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
         alpha: CGFloat(1.0)
     )
+}
+
+extension UIViewController {
+    public static func findBestViewController(_ vc: UIViewController) -> UIViewController {
+        if let presentedViewController = vc.presentedViewController {
+            // Return presented view controller
+            return UIViewController.findBestViewController(presentedViewController)
+        }
+        else if let svc = vc as? UISplitViewController {
+            // Return right hand side
+            if svc.viewControllers.count > 0 {
+                return UIViewController.findBestViewController(svc.viewControllers.last!)
+            }
+            else {
+                return vc
+            }
+        }
+        else if let svc = vc as? UINavigationController {
+            // Return top view
+            // TODO: Need to compare with ObjC ver.
+            if let topViewController = svc.topViewController {
+                return UIViewController.findBestViewController(topViewController)
+            }
+            else {
+                return vc
+            }
+        }
+        else if let svc = vc as? UITabBarController {
+            // Return visible view
+            if (svc.viewControllers?.count ?? 0) > 0 {
+                return UIViewController.findBestViewController(svc.selectedViewController!)
+            }
+            else {
+                return vc
+            }
+        }
+        else {
+            // Unknown view controller type, return last child view controller
+            return vc
+        }
+    }
+    
+    public static func currentViewController() -> UIViewController? {
+        guard let viewController = UIApplication.shared.keyWindow?.rootViewController else { return nil }
+        return UIViewController.findBestViewController(viewController)
+    }
 }
 
