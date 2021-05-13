@@ -49,9 +49,10 @@ final class AddFundsViewModel: ViewModel {
   }
   
   func didChangeAmount(value: String?) {
+    let val = "\(value ?? "")".replacingOccurrences(of: "$", with: "")
     guard self.currentPaymentSource != nil,
       let value = value,
-      let amount = Double(value),
+      let amount = Double(val),
       amount > 0 else
     {
       self.nextButtonEnabled.send(false)

@@ -9,7 +9,7 @@ final class AddFundsView: UIView {
     static let maxAllowedDigit = 4
 
   private lazy var textField: UITextField = {
-    let textField = ComponentCatalog.textFieldWith(placeholder: "$0",placeholderColor: uiConfig.textSecondaryColor, font: .boldSystemFont(ofSize: 44), textColor: uiConfig.textPrimaryColor)
+    let textField = ComponentCatalog.textFieldWith(placeholder: "$0",placeholderColor: uiConfig.textSecondaryColor, font: .boldSystemFont(ofSize: 62), textColor: uiConfig.textPrimaryColor)
     textField.keyboardType = .decimalPad
     textField.textAlignment = .center
     return textField
@@ -58,8 +58,16 @@ final class AddFundsView: UIView {
     textField.addSubview(errorLabel)
     addSubview(textField)
 
-    self.nextButton = .roundedButtonWith("load_funds.add_money.primary_cta".podLocalized(), backgroundColor: uiConfig.uiPrimaryColor, cornerRadius: 24) { [weak self] in
-      self?.viewModel?.input.didTapOnPullFunds()
+//    self.nextButton = .roundedButtonWith("load_funds.add_money.primary_cta".podLocalized(), backgroundColor: uiConfig.uiPrimaryColor, cornerRadius: 24) { [weak self] in
+//      self?.viewModel?.input.didTapOnPullFunds()
+//    }
+    self.nextButton = ComponentCatalog.buttonWith(title: "load_funds.add_money.primary_cta".podLocalized(),
+                                                  showShadow: false,
+                                                  accessibilityLabel: "Continue button",
+                                                  uiConfig: uiConfig) { [weak self] in
+//        self.view.endEditing(true)
+//        self.nextTapped()
+        self?.viewModel?.input.didTapOnPullFunds()
     }
     self.nextButton.isHidden = true
     
@@ -199,6 +207,32 @@ extension AddFundsView: UITextFieldDelegate {
     
     private func updateAmountIfNeeded(lastChar: String, text: String) -> String {
         let amount = lastChar.isEmpty ? String(text.dropLast()) : text
-        return Double(amount) != nil ? amount : ""
+        if let d = Double(amount) {
+            return d.dollarVal()
+        } else {
+            return ""
+        }
+//        return Double(amount) != nil ? amount : ""
+    }
+}
+
+extension Double {
+    func dollarVal() -> String {
+        var num = Double(0)
+        num = Double(self)
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+//        currencyFormatter.allowsFloats = false
+//        currencyFormatter.alwaysShowsDecimalSeparator = false
+        // localize to your grouping and decimal separator
+        currencyFormatter.locale = Locale.current
+        if let val = currencyFormatter.string(from: NSNumber(value: num)) {
+            print(val)
+            return val
+        } else {
+            return "$0"
+        }
+        // Displays $9,999.99 in the US locale
     }
 }

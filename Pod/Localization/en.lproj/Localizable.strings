@@ -1133,11 +1133,11 @@
 
 /* Load funds */
 
-"load_funds.add_money.title" = "Add Money";
+"load_funds.add_money.title" = "Deposit Funds";
 "load_funds.add_money.change_card" = "Change";
 "load_funds.add_money.add_card" = "Add";
 "load_funds.add_money.no_payment_method" = "No payment method";
-"load_funds.add_money.primary_cta" = "Add";
+"load_funds.add_money.primary_cta" = "Deposit";
 "load_funds.add_card.title" = "Debit Card";
 "load_funds.add_card.card_number.placeholder" = "Enter debit card number";
 "load_funds.add_card.date.placeholder" = "MM/YY";

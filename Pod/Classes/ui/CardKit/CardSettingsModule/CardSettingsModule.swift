@@ -78,6 +78,46 @@ class CardSettingsModule: UIModule, CardSettingsModuleProtocol {
     return viewController
   }
     
+    
+    func showAddFunding(from: UIViewController) {
+//      guard card.features?.allowedBalanceTypes?.isEmpty == false else { return }
+        let module = serviceLocator.moduleLocator.fundingSourceSelector(card: card)
+        let viewModel = AddMoneyViewModel(cardId: card.accountId, loader: serviceLocator.platform, analyticsManager: serviceLocator.analyticsManager)
+        let addMoneyController = AddMoneyViewController(uiConfiguration: uiConfig, viewModel: viewModel)
+        addMoneyController.directDepositAction = { [weak self] in
+            guard let self = self else { return }
+            let viewModel = DirectDepositViewModel(cardId: self.card.accountId,
+                                                   loader: self.serviceLocator.platform,
+                                                   analyticsManager: self.serviceLocator.analyticsManager)
+            let controller = DirectDepositViewController(uiConfiguration: UIConfig.default, viewModel: viewModel)
+            self.present(viewController: controller, animated: true, embedInNavigationController: true, completion: {})
+        }
+        addMoneyController.debitCardAction = { [weak self] in
+//            let presenterConfig = CardSettingsPresenterConfig(cardholderAgreement: cardProduct.cardholderAgreement,
+//                                                              privacyPolicy: cardProduct.privacyPolicy,
+//                                                              termsAndCondition: cardProduct.termsAndConditions,
+//                                                              faq: cardProduct.faq,
+//                                                              exchangeRates: cardProduct.exchangeRates,
+//                                                              showDetailedCardActivity: isShowDetailedInfoEnabled,
+//                                                              showMonthlyStatements: isShowMonthlyStatementsEnabled)
+//            let legalDocuments = LegalDocuments(cardHolderAgreement: self.config.cardholderAgreement,
+//                                                faq: config.faq,
+//                                                termsAndConditions: config.termsAndCondition,
+//                                                privacyPolicy: config.privacyPolicy,
+//                                                exchangeRates: config.exchangeRates)
+//            let extraContent = ExtraContent(content: legalDocuments.cardHolderAgreement, title: "card_settings.legal.cardholder_agreement.title".podLocalized())
+            self?.showAddFunds(for: self!.card, extraContent: nil)
+        }
+        addMoneyController.modalPresentationStyle = .overFullScreen
+        
+        from.present(addMoneyController, animated: true, completion: nil)
+//      return module
+      
+//        from.present(module: module.mo, uiConfig: self.uiConfig) { _ in }
+//      from.present(module: module, embedInNavigationController: false) { _ in }
+      
+    }
+    
     private func dismissableContentPresenterModule(with content: Content,
                                         title: String) -> ContentPresenterModuleProtocol {
         let module = serviceLocator.moduleLocator.contentPresenterModule(content: content, title: title)

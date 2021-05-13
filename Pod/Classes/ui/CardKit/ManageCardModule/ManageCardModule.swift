@@ -65,6 +65,36 @@ class ManageCardModule: UIModule {
       }
     }
   }
+    
+    public func openFunding(completion: @escaping Result<UIViewController, NSError>.Callback) {
+      platform.fetchContextConfiguration { [weak self] result in
+        guard let self = self else { return }
+        switch result {
+        case .failure(let error):
+          completion(.failure(error))
+        case .success(let contextConfiguration):
+          self.projectConfiguration = contextConfiguration.projectConfiguration
+          // Refresh the card data
+          self.platform.fetchCard(self.card.accountId, forceRefresh: false,
+                                  retrieveBalances: false) { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .failure(let error):
+              completion(.failure(error))
+            case .success(let financialAccount):
+              guard let card = financialAccount as? Card else { return }
+              self.card = card
+              if let kyc = self.card.kyc, kyc != .passed {
+                self.showKYCViewController(addChild: true, card: self.card, completion: completion)
+              }
+              else {
+                self.showManageCard(addChild: true, completion: completion)
+              }
+            }
+          }
+        }
+      }
+    }
 
   private func registerForNotifications() {
     serviceLocator.notificationHandler.addObserver(self, selector: #selector(self.kycInvalidated),
@@ -281,6 +311,26 @@ extension ManageCardModule: ManageCardRouterProtocol {
     module.delegate = self
     present(module: module) { _ in }
   }
+    
+    func showFundingBalance(from: UIViewController) -> FundingSourceSelectorModuleProtocol {
+//      guard card.features?.allowedBalanceTypes?.isEmpty == false else { return }
+      let module = serviceLocator.moduleLocator.fundingSourceSelector(card: card)
+      module.onClose = { [weak self] _ in
+        self?.dismissModule {
+          self?.fundingSourceSelectorModule = nil
+          self?.presenter?.refreshFundingSource()
+        }
+      }
+      module.onFinish = { [weak self] _ in
+        self?.dismissModule {
+          self?.fundingSourceSelectorModule = nil
+          self?.presenter?.refreshFundingSource()
+        }
+      }
+      self.fundingSourceSelectorModule = module
+        
+      return module
+    }
 
   func balanceTappedInManageCardViewer() {
     guard card.features?.allowedBalanceTypes?.isEmpty == false else { return }
@@ -298,7 +348,10 @@ extension ManageCardModule: ManageCardRouterProtocol {
       }
     }
     self.fundingSourceSelectorModule = module
+//    return module
+    
     present(module: module, embedInNavigationController: false) { _ in }
+    
   }
 
   func showCardStatsTappedInManageCardViewer() {

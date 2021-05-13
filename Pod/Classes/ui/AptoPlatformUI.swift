@@ -309,8 +309,37 @@ extension AptoPlatform {
     
     public func showFundingPage(from: UIViewController, card: Card,
                               mode: AptoUISDKMode,
-                              completion: @escaping (Result<UIModule, NSError>.Callback)) {
-        launchFundingPage(from: from, card: card, completion: completion)
+                              completion: @escaping (Result<UIViewController, NSError>.Callback)) {
+        
+        
+//        launchFundingPage(from: from, card: card, completion: completion)
+//        let module = serviceLocator.moduleLocator.fundingSourceSelector(card: card)
+        let module = serviceLocator.moduleLocator.manageCardModule(card: card, mode: .embedded)
+//        let p = PhoneCallerProtocol()
+//        p.
+        let mod = CardSettingsModule(serviceLocator: serviceLocator, card: card, phoneCaller: PhoneCaller())
+//        let mo = serviceLocator.moduleLocator.cardSettingsModule(card: card)
+//        mo.f
+//        let mod = ManageCardModule(serviceLocator: serviceLocator, card: card, mode: .embedded)
+        mod.navigationController = from.navigationController
+        mod.showAddFunds(for: card)
+//        let pro = mod.showAddFunding(from: from)
+//        mod.present(module: pro) { result in
+//            completion(result)
+//        }
+//        module.onClose = { _ in
+//            mod.dismissModule {
+//
+//          }
+//        }
+//        module.onFinish = { _ in
+//          mod.dismissModule {
+////            mod.fundingSourceSelectorModule = nil
+////            mod.presenter?.refreshFundingSource()
+//          }
+//        }
+//        self.fundingSourceSelectorModule = module
+//        present(module: module, embedInNavigationController: false) { _ in }
     }
     
     // swiftlint:disable:next function_parameter_count
