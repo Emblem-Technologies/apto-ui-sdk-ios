@@ -1117,7 +1117,7 @@
 
 "auth.input_phone.title" = "Get Started";
 
-"auth.input_phone.explanation" = "To ensure the security of your account, please enter your phone number below and we will send you a unique code to authenticate you.";
+"auth.input_phone.explanation" = "To ensure the security of your account, please enter your phone number below and we will send you a unique code.";
 
 "auth.input_phone.call_to_action.title" = "Next";
 
