@@ -19,7 +19,8 @@ class ServiceLocator: ServiceLocatorProtocol {
   lazy var storageLocator: StorageLocatorProtocol = StorageLocator(serviceLocator: self)
   lazy var networkLocator: NetworkLocatorProtocol = NetworkLocator(serviceLocator: self)
 
-  private(set) var platform: AptoPlatformProtocol = AptoPlatform.defaultManager()
+  lazy var platform: AptoPlatformProtocol = AptoPlatform.defaultManager()
+//  private(set) var platform: AptoPlatformProtocol = AptoPlatform.defaultManager()
   var uiConfig: UIConfig! // swiftlint:disable:this implicitly_unwrapped_optional
   lazy var analyticsManager: AnalyticsServiceProtocol = AnalyticsManager.instance
   lazy var notificationHandler: NotificationHandler = NotificationHandlerImpl()
