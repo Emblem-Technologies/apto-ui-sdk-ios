@@ -176,7 +176,8 @@ open class CardModule: UIModule {
       case .success(let cards):
         let nonClosedCards = cards.filter { $0.state != .cancelled }
         if let card = nonClosedCards.first {
-          self.showManageCardModule(card: card, addChild: addChild, pushModule: pushModule, completion: completion)
+//          self.showManageCardModule(card: card, addChild: addChild, pushModule: pushModule, completion: completion)
+            self.showCardProductSelector(addChild: addChild, completion: completion)
         }
         else {
           self.showCardProductSelector(addChild: addChild, completion: completion)
