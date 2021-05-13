@@ -124,12 +124,12 @@ open class CardModule: UIModule {
       }
       wself.userDataPoints = user.userData.copy() as! DataPointList // swiftlint:disable:this force_cast
       // There's a user. Check if he has already cards.
-        self.dismissModule(animated: true) {
-            print("dismissing card module")
-        }
-//      wself.showExistingOrNewCardModule { _ in
-//        wself.authModule = nil
-//      }
+//        self.dismissModule(animated: true) {
+//            print("dismissing card module")
+//        }
+      wself.showExistingOrNewCardModule { _ in
+        wself.authModule = nil
+      }
     }
     self.authModule = authModule
     if addChild {
