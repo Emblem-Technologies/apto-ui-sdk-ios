@@ -62,7 +62,7 @@ private extension FormRowPhoneFieldView {
     contentView.addSubview(phoneTextField)
     phoneTextField.snp.makeConstraints { make in
       if let label = self.label {
-        make.top.equalTo(label.snp.bottom).offset(6)
+        make.top.equalTo(label.snp.bottom).offset(20)
       }
       else {
         make.top.equalToSuperview()

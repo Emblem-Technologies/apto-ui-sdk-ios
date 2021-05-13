@@ -31,8 +31,9 @@ public enum StatusBarStyle: String, Equatable {
 
   private let uiColorDisabledAlpha: CGFloat = 0.2
 
-  public lazy var uiPrimaryColor = UIColor.dynamicColor(light: lightBranding.uiPrimaryColor,
-                                                        dark: darkBranding.uiPrimaryColor)
+//  public lazy var uiPrimaryColor = UIColor.dynamicColor(light: lightBranding.uiPrimaryColor,
+//                                                        dark: darkBranding.uiPrimaryColor)
+  public lazy var uiPrimaryColor = GlobalVariables.lightPurple
   public var uiPrimaryColorDisabled: UIColor { uiPrimaryColor.withAlphaComponent(uiColorDisabledAlpha) }
   public lazy var uiSecondaryColor = UIColor.dynamicColor(light: lightBranding.uiSecondaryColor,
                                                           dark: darkBranding.uiSecondaryColor)
