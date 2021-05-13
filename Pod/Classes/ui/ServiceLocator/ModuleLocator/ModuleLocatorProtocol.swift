@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ModuleLocatorProtocol {
+public protocol ModuleLocatorProtocol {
   func fullScreenDisclaimerModule(disclaimer: Content,
                                   disclaimerTitle: String,
                                   callToActionTitle: String,

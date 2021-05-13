@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol FileDownloaderProvider {
+public protocol FileDownloaderProvider {
   func fileDownloader(url: URL, localFilename: String) -> FileDownloader
 }
 
-protocol SystemServicesLocatorProtocol: FileDownloaderProvider {
+public protocol SystemServicesLocatorProtocol: FileDownloaderProvider {
   func fileManager(filename: String) -> FileManagerProtocol
   func dateProvider() -> DateProviderProtocol
   func authenticationManager() -> AuthenticationManagerProtocol

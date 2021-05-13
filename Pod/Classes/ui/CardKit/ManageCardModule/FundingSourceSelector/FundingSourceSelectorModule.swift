@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 
 open class FundingSourceSelectorModule: UIModule, FundingSourceSelectorModuleProtocol {
-  private let card: Card
-  private var presenter: FundingSourceSelectorPresenterProtocol?
-  private var externalOAuthModule: ExternalOAuthModule?
+  let card: Card
+  var presenter: FundingSourceSelectorPresenterProtocol?
+  var externalOAuthModule: ExternalOAuthModule?
 
-  init(serviceLocator: ServiceLocatorProtocol, card: Card) {
+  public init(serviceLocator: ServiceLocatorProtocol, card: Card) {
     self.card = card
     super.init(serviceLocator: serviceLocator)
   }

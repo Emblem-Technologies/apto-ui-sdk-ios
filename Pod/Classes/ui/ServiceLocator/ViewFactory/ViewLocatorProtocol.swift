@@ -14,7 +14,7 @@ import UIKit
 // protocol ViewControllerProtocol where Self: UIViewController {}
 //
 // That statement will compile but the app will crash in runtime whenever a UIViewController is expected.
-protocol ViewLocatorProtocol {
+public protocol ViewLocatorProtocol {
   func fullScreenDisclaimerView(uiConfig: UIConfig,
                                 eventHandler: FullScreenDisclaimerEventHandler,
                                 disclaimerTitle: String,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol InteractorLocatorProtocol {
+public protocol InteractorLocatorProtocol {
   func fullScreenDisclaimerInteractor(disclaimer: Content) -> FullScreenDisclaimerInteractorProtocol
   func countrySelectorInteractor(countries: [Country]) -> CountrySelectorInteractorProtocol
 
