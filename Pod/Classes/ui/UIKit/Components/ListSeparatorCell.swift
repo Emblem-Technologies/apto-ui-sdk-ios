@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ListSeparatorCell: UITableViewCell {
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

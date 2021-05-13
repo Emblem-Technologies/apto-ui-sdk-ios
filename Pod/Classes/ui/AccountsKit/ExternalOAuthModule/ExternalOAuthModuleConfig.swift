@@ -5,7 +5,7 @@
 //  Created by Ivan Oliver Martínez on 23/06/2018.
 //
 
-import AptoSDK
+import UIKit
 
 struct ExternalOAuthModuleConfig {
   let title: String

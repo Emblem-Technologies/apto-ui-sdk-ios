@@ -7,7 +7,7 @@
 
 import UIKit
 import SnapKit
-import AptoSDK
+import UIKit
 
 final class OrderPhysicalCardView: UIView {
     struct Constants {

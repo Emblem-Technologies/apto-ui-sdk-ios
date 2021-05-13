@@ -5,7 +5,7 @@
 // Created by Takeichi Kanzaki on 17/06/2019.
 //
 
-import AptoSDK
+import UIKit
 import TwilioVoice
 
 class TwilioVoIPClient: NSObject, VoIPCallProtocol {

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class MonthlyStatementListCellController: CellController {
   private let month: Month

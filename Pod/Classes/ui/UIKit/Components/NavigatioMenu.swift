@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 protocol NavigationMenuListener {
   func shouldShowRefreshOffersButton() -> Bool

@@ -1,4 +1,4 @@
-import AptoSDK
+import UIKit
 import CoreLocation.CLLocation
 
 internal struct TransactionDetailRouter: ShiftCardTransactionDetailsRouterProtocol {

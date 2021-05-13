@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class UserDataCollectorInteractorExistingUserStrategy: UserDataCollectorInteractorStrategy {
   override func shouldShowEmailVerification(userData: DataPointList,

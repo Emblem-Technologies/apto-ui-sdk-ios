@@ -5,7 +5,7 @@
 //  Created by Takeichi Kanzaki on 14/01/2019.
 //
 
-import AptoSDK
+import UIKit
 import Bond
 
 class TransactionListPresenter: TransactionListPresenterProtocol {

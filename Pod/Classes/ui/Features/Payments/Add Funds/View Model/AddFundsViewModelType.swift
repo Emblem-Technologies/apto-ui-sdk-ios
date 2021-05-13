@@ -1,5 +1,5 @@
 import Bond
-import AptoSDK
+import UIKit
 import UIKit
 
 enum AddFundsViewState {

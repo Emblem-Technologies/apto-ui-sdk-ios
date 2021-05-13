@@ -8,7 +8,7 @@
 
 import UIKit
 import SnapKit
-import AptoSDK
+import UIKit
 
 private protocol _UITextFieldDelegate: class {
   func deletePressed(_ textField: _UITextField)

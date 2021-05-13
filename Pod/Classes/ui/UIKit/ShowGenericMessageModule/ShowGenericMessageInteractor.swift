@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 protocol ShowGenericMessageDataReceiver {
   func set(title: String, content: Content?, callToAction: CallToAction?)

@@ -5,7 +5,7 @@
 //  Created by Fabio Cuomo on 26/3/21.
 //
 
-import AptoSDK
+import UIKit
 import SnapKit
 
 final class OrderPhysicalCardSuccessViewController: ShiftViewController {

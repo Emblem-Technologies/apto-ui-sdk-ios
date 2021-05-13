@@ -2,7 +2,7 @@ import UIKit
 import SnapKit
 import ReactiveKit
 import Bond
-import AptoSDK
+import UIKit
 
 final class AddCardView: UIView {
 

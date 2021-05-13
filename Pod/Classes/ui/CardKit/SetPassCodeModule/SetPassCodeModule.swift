@@ -1,5 +1,5 @@
 import Foundation
-import AptoSDK
+import UIKit
 
 class SetPassCodeModule: UIModule, SetCodeModuleProtocol {
   private let card: Card

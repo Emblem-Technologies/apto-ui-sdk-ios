@@ -5,7 +5,7 @@
 //  Created by Takeichi Kanzaki on 25/09/2018.
 //
 
-import AptoSDK
+import UIKit
 import Bond
 
 protocol DataConfirmationRouter: class {

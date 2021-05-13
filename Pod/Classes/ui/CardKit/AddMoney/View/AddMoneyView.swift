@@ -7,7 +7,7 @@
 
 import UIKit
 import SnapKit
-import AptoSDK
+import UIKit
 
 public class AddMoneyView: UIView {
     struct Constants {

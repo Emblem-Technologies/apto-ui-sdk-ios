@@ -1,6 +1,6 @@
 import UIKit
 import ReactiveKit
-import AptoSDK
+import UIKit
 
 final class PassCodeOnboardingViewController: UIViewController {
   private let viewModel: PassCodeOnboardingViewModelType

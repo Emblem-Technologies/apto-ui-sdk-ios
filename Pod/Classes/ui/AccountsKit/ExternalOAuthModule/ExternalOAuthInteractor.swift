@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class ExternalOAuthInteractor: ExternalOAuthInteractorProtocol {
   private let platform: AptoPlatformProtocol

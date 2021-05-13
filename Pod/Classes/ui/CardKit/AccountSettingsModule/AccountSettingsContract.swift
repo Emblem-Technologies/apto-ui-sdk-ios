@@ -7,7 +7,7 @@
 //
 
 import Bond
-import AptoSDK
+import UIKit
 
 protocol AccountSettingsRouterProtocol: class {
   func closeFromAccountSettings()

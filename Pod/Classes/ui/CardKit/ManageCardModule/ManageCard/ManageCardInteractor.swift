@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class ManageCardInteractor: ManageCardInteractorProtocol {
   private let platform: AptoPlatformProtocol

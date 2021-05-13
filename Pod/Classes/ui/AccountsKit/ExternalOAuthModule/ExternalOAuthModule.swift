@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class ExternalOAuthModule: UIModule, ExternalOAuthModuleProtocol {
   private let config: ExternalOAuthModuleConfig

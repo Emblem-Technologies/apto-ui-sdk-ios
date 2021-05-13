@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 class AccountSettingsModule: UIModule {
   private var projectConfiguration: ProjectConfiguration! // swiftlint:disable:this implicitly_unwrapped_optional

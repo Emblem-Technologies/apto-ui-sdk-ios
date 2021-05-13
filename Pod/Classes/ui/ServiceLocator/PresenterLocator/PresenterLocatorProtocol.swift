@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 protocol PresenterLocatorProtocol {
   func fullScreenDisclaimerPresenter() -> FullScreenDisclaimerPresenterProtocol

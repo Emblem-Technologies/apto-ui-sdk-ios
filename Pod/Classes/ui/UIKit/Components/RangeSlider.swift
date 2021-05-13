@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 protocol RangeSliderDelegate: class {
   func didStartSwippingIn(rangeSlider: RangeSlider)

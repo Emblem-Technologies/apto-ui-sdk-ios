@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class AccountSettingsPresenter: AccountSettingsPresenterProtocol {
   let viewModel = AccountSettingsViewModel()

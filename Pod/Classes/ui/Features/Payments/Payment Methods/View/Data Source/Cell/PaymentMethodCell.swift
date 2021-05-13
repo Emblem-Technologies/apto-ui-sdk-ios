@@ -1,5 +1,5 @@
 import UIKit
-import AptoSDK
+import UIKit
 
 final class PaymentMethodCell: UITableViewCell {
   static let identifier = String(describing: PaymentMethodCell.self)

@@ -5,7 +5,7 @@
 // Created by Takeichi Kanzaki on 21/03/2019.
 //
 
-import AptoSDK
+import UIKit
 
 class FetchTransactionOperationQueue {
   private let transactionsProvider: TransactionsProvider

@@ -1,4 +1,4 @@
-import AptoSDK
+import UIKit
 
 final class TransactionListDataSource: NSObject {
   

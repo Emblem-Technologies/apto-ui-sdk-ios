@@ -5,7 +5,7 @@
 //  Created by Ivan Oliver Martínez on 11/03/2018.
 //
 
-import AptoSDK
+import UIKit
 import LocalAuthentication
 
 class LocalAuthenticationHandler {

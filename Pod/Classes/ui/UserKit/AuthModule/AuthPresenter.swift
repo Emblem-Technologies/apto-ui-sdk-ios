@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 import ReactiveKit
 
 class AuthPresenter: AuthPresenterProtocol {

@@ -7,7 +7,7 @@
 
 import UIKit
 import SnapKit
-import AptoSDK
+import UIKit
 
 public class DirectDepositView: UIView {
     let uiConfiguration: UIConfig

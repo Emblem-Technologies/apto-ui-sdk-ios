@@ -1,4 +1,4 @@
-import AptoSDK
+import UIKit
 
 public enum TransactionListState {
   case loading

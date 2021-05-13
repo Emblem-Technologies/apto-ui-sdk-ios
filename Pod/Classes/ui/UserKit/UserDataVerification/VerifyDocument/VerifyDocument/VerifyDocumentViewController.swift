@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 protocol VerifyDocumentEventHandler {
   var viewModel: VerifyDocumentViewModel { get }

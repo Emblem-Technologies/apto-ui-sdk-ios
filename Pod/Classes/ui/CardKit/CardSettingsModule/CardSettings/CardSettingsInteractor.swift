@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class CardSettingsInteractor: CardSettingsInteractorProtocol {
   private let platform: AptoPlatformProtocol

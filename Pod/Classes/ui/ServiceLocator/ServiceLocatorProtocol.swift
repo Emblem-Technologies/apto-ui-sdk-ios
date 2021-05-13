@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 protocol ServiceLocatorProtocol: class {
   var moduleLocator: ModuleLocatorProtocol { get }
@@ -14,6 +14,9 @@ protocol ServiceLocatorProtocol: class {
   var interactorLocator: InteractorLocatorProtocol { get }
   var viewLocator: ViewLocatorProtocol { get }
   var systemServicesLocator: SystemServicesLocatorProtocol { get }
+  var storageLocator: StorageLocatorProtocol { get }
+  var networkLocator: NetworkLocatorProtocol { get }
+
 
   var platform: AptoPlatformProtocol { get }
   var uiConfig: UIConfig! { get set } // swiftlint:disable:this implicitly_unwrapped_optional

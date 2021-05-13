@@ -1,8 +1,8 @@
-import UIKit
+import Foundation
 import SnapKit
 import ReactiveKit
 import Bond
-import AptoSDK
+import UIKit
 
 final class AddFundsView: UIView {
   

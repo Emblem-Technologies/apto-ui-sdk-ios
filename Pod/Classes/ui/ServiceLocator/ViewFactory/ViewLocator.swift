@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 final class ViewLocator: ViewLocatorProtocol {
   private unowned let serviceLocator: ServiceLocatorProtocol

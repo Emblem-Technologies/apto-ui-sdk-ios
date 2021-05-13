@@ -5,8 +5,8 @@
 // Created by Takeichi Kanzaki on 11/01/2019.
 //
 
+import Foundation
 import UIKit
-import AptoSDK
 import SnapKit
 
 class CardMonthlyStatsGraphSummaryView: UIView {

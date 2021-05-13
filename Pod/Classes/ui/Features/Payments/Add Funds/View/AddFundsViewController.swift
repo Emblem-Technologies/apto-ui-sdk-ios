@@ -1,6 +1,6 @@
 import UIKit
 import ReactiveKit
-import AptoSDK
+import UIKit
 
 final class AddFundsViewController: UIViewController {
   private var viewModel: AddFundsViewModelType

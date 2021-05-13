@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 class UserDataCollectorStepFactory {
   private let requiredData: RequiredDataPointList

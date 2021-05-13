@@ -7,7 +7,7 @@
 
 import UIKit
 import SnapKit
-import AptoSDK
+import UIKit
 
 public final class DetailActionView: UIView {
     let uiConfiguration: UIConfig

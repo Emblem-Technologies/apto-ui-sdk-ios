@@ -7,7 +7,7 @@
 
 import Foundation
 import SnapKit
-import AptoSDK
+import UIKit
 
 public final class ShowInfoView: UIView {
     let uiConfiguration: UIConfig

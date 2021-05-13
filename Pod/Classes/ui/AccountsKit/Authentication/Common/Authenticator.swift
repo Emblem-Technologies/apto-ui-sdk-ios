@@ -5,6 +5,9 @@
 //  Created by Ivan Oliver Martínez on 12/03/2018.
 //
 
+import Foundation
+import UIKit
+
 protocol AuthenticatorProtocol {
   var biometryType: BiometryType { get }
   var isBiometryAvailable: Bool { get }

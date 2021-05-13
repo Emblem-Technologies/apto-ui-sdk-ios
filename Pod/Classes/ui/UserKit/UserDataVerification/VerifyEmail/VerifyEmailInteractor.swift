@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 protocol VerifyEmailDataReceiver: class {
   func emailReceived(_ email: Email)

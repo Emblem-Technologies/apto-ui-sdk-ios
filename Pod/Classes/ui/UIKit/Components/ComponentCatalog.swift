@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 import PhoneNumberKit
 
 // swiftlint:disable type_body_length

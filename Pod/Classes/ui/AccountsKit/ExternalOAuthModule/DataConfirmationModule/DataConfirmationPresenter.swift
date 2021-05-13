@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 class DataConfirmationPresenter: DataConfirmationPresenterProtocol {
   let viewModel = DataConfirmationViewModel()

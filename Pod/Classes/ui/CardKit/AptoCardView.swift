@@ -5,7 +5,8 @@
 //  Created by Fabio Cuomo on 30/3/21.
 //
 
-import AptoSDK
+import Foundation
+import UIKit
 
 public final class AptoCardView: UIView {
     private(set) var backgroundImageView: UIImageView = {

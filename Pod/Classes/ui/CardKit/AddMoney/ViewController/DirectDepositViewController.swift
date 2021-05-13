@@ -5,7 +5,7 @@
 //  Created by Fabio Cuomo on 27/1/21.
 //
 
-import AptoSDK
+import UIKit
 
 class DirectDepositViewController: ShiftViewController {
     private(set) lazy var mainView = DirectDepositView(uiconfig: uiConfiguration)

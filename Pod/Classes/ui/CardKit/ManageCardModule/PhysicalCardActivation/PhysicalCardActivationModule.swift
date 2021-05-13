@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class PhysicalCardActivationModule: UIModule, PhysicalCardActivationModuleProtocol {
   private let card: Card

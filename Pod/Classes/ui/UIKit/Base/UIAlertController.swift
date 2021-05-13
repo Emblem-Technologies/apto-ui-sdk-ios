@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 public protocol ActionConfirmer {
   static func confirm(title: String?,

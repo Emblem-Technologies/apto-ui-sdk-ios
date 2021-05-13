@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class CountrySelectorModule: UIModule, CountrySelectorModuleProtocol {
   private let countries: [Country]

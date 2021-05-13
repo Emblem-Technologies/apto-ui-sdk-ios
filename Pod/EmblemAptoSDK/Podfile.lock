@@ -1,0 +1,88 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireNetworkActivityIndicator (2.4.0):
+    - Alamofire (~> 4.8)
+  - AptoPCI (2.1.0)
+  - Bond (7.8.1):
+    - Differ (~> 1.4)
+    - ReactiveKit (~> 3.14)
+  - Differ (1.4.5)
+  - Down (0.8.6)
+  - FTLinearActivityIndicator (1.2.1)
+  - GoogleKit (0.3.2)
+  - Mixpanel-swift (2.9.3):
+    - Mixpanel-swift/Complete (= 2.9.3)
+  - Mixpanel-swift/Complete (2.9.3)
+  - PhoneNumberKit (3.3.3):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.3.3)
+    - PhoneNumberKit/UIKit (= 3.3.3)
+  - PhoneNumberKit/PhoneNumberKitCore (3.3.3)
+  - PhoneNumberKit/UIKit (3.3.3):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - PullToRefreshKit (0.8.8)
+  - ReactiveKit (3.17.4)
+  - SnapKit (5.0.1)
+  - SwiftyJSON (5.0.1)
+  - TrustKit (1.7.0)
+  - TTTAttributedLabel (2.0.0)
+  - TwilioVoice (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8)
+  - AlamofireNetworkActivityIndicator (~> 2.2)
+  - AptoPCI (= 2.1.0)
+  - Bond (~> 7.6)
+  - Down (~> 0.8.0)
+  - FTLinearActivityIndicator (= 1.2.1)
+  - GoogleKit (~> 0.3)
+  - Mixpanel-swift (~> 2.7)
+  - PhoneNumberKit (~> 3.2)
+  - PullToRefreshKit (~> 0.8)
+  - SnapKit (~> 5.0)
+  - SwiftyJSON (~> 5.0)
+  - TrustKit (~> 1.6)
+  - TTTAttributedLabel (~> 2.0)
+  - TwilioVoice (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - AptoPCI
+    - Bond
+    - Differ
+    - Down
+    - FTLinearActivityIndicator
+    - GoogleKit
+    - Mixpanel-swift
+    - PhoneNumberKit
+    - PullToRefreshKit
+    - ReactiveKit
+    - SnapKit
+    - SwiftyJSON
+    - TrustKit
+    - TTTAttributedLabel
+    - TwilioVoice
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
+  AptoPCI: 8a85a014534b5d9036170e3698309de4fa51bc88
+  Bond: 87075c7f20f37ea3e73dc7057fce839787bf46eb
+  Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
+  Down: 3c758f2388fa739663023f400e742a988fa1e21d
+  FTLinearActivityIndicator: a3ef57034bd05bc80c1a7c62c8797c0361fa7bee
+  GoogleKit: c4b00706a0b1091b295e59920bbd46fd30f74243
+  Mixpanel-swift: 05ab116526c72e0e66a6a2feb9005e933c414347
+  PhoneNumberKit: 4ce83273551c4d2ae10b7361162f4283dd02835f
+  PullToRefreshKit: 7cc53e720e69f135cffa1a57784dfb534f0222ab
+  ReactiveKit: f9f9e079efa39312c597bf1508ef4810d111ce76
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  TrustKit: dac38bb37e49bdfeca41b1a19d020da38017b51c
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  TwilioVoice: b75c5120e1e6a7402fd1f9f4917e8215ce8d7baf
+
+PODFILE CHECKSUM: 193fd60f31ec5be1dc22644d6a73699d04204883
+
+COCOAPODS: 1.10.1

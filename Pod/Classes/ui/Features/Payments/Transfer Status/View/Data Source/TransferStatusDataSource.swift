@@ -1,5 +1,5 @@
 import Foundation
-import AptoSDK
+import UIKit
 
 final class TransferStatusDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
   

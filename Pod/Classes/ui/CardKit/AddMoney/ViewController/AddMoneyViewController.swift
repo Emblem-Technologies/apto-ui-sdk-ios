@@ -5,7 +5,7 @@
 //  Created by Fabio Cuomo on 26/1/21.
 //
 
-import AptoSDK
+import UIKit
 import SnapKit
 
 class AddMoneyViewController: ShiftViewController {

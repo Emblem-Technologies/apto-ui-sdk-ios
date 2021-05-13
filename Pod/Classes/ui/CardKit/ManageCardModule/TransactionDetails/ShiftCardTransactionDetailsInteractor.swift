@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class ShiftCardTransactionDetailsInteractor: ShiftCardTransactionDetailsInteractorProtocol {
   private let transaction: Transaction

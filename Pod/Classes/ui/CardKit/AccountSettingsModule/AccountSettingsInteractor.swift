@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class AccountSettingsInteractor: AccountSettingsInteractorProtocol {
   private let platform: AptoPlatformProtocol

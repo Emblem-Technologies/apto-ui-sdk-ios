@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class UIFormattedLabel: UILabel {
   var formattingPattern = "***-**-****"

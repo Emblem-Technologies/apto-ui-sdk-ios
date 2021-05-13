@@ -1,5 +1,5 @@
 import UIKit
-import AptoSDK
+import UIKit
 
 final class TransferStatusCell: UITableViewCell {
   static let identifier = String(describing: TransferStatusCell.self)

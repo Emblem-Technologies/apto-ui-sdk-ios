@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 protocol VerifyPhoneDataReceiver: class {
   func phoneNumberReceived(_ phone: PhoneNumber)

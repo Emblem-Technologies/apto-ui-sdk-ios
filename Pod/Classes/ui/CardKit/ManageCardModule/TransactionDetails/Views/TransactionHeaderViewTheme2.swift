@@ -5,8 +5,8 @@
 //  Created by Ivan Oliver Martínez on 30/12/2018.
 //
 
+import Foundation
 import UIKit
-import AptoSDK
 import SnapKit
 
 class TransactionHeaderViewTheme2: UIView {

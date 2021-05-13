@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 open class FormRowTitleSubtitleView: FormRowView {
   public let titleLabel: UILabel

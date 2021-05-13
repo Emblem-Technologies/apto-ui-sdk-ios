@@ -1,5 +1,5 @@
 import Foundation
-import AptoSDK
+import UIKit
 
 enum CardType: String, Equatable, CaseIterable {
   /* Prefixes and card lengths https://en.wikipedia.org/wiki/Bank_card_number */

@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 public struct UIModuleResult {
   let module: UIModuleProtocol

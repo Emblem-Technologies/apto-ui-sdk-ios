@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class PaddingLabel: UILabel {
   var padding: UIEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)

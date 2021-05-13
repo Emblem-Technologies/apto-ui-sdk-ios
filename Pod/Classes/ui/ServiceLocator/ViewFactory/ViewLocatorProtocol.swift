@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 // The methods of this protocol expected will return a compound data type consisting in a UIViewController and a given
 // protocol. The reason behind that is that the swift compiler do not support this construction:

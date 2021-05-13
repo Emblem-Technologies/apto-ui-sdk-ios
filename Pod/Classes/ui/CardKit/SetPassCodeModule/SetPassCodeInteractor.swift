@@ -1,5 +1,5 @@
 import Foundation
-import AptoSDK
+import UIKit
 
 class SetPassCodeInteractor: SetCodeInteractorProtocol {
   private let platform: AptoPlatformProtocol

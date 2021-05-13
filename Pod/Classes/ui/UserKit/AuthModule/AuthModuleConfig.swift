@@ -5,7 +5,7 @@
 //  Created by Ivan Oliver Martínez on 13/12/2017.
 //
 
-import AptoSDK
+import UIKit
 
 @objc open class AuthModuleConfig: NSObject {
   public let defaultCountryCode: Int

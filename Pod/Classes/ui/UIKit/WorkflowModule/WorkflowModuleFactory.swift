@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 protocol WorkflowModuleFactory {
   func getModuleFor(workflowAction: WorkflowAction) -> UIModuleProtocol?

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 private var imageUrlAssociationKey: UInt8 = 0
 

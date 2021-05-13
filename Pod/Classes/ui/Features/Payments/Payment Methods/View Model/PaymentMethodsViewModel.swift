@@ -1,6 +1,6 @@
 import Bond
 import UIKit
-import AptoSDK
+import UIKit
 import ReactiveKit
 
 private typealias ViewModel = PaymentMethodsViewModelType & PaymentMethodsViewModelInput & PaymentMethodsViewModelOutput

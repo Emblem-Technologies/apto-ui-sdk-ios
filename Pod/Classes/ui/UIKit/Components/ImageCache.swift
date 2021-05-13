@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class ImageCache {
   private static var sharedInstance: ImageCache! // swiftlint:disable:this implicitly_unwrapped_optional

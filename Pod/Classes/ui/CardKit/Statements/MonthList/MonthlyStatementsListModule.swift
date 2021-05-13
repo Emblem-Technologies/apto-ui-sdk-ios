@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class MonthlyStatementsListModule: UIModule, MonthlyStatementsListModuleProtocol {
   private var presenter: MonthlyStatementsListPresenterProtocol?

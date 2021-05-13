@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class FundingSourceSelectorPresenter: FundingSourceSelectorPresenterProtocol {
   // swiftlint:disable implicitly_unwrapped_optional

@@ -5,6 +5,9 @@
 //  Created by Takeichi Kanzaki on 08/03/2019.
 //
 
+import Foundation
+import UIKit
+
 class NotificationPreferencesModule: UIModule, NotificationPreferencesModuleProtocol {
   private var presenter: NotificationPreferencesPresenterProtocol?
 

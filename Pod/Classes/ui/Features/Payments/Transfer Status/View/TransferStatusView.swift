@@ -1,6 +1,6 @@
 import UIKit
 import SnapKit
-import AptoSDK
+import UIKit
 import ReactiveKit
 
 final class TransferStatusView: UIView {

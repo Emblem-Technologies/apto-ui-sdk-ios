@@ -5,7 +5,7 @@
 // Created by Takeichi Kanzaki on 01/03/2019.
 //
 
-import AptoSDK
+import UIKit
 
 class CardWaitListModule: UIModule, CardWaitListModuleProtocol {
   private let card: Card

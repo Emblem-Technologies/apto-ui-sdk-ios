@@ -1,4 +1,4 @@
-import AptoSDK
+import UIKit
 
 public struct CardViewOptions {
   public let uiConfig: UIConfig

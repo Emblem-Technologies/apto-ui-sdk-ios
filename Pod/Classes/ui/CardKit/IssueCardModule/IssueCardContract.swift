@@ -5,7 +5,7 @@
 // Created by Takeichi Kanzaki on 20/11/2018.
 //
 
-import AptoSDK
+import UIKit
 import Bond
 
 enum IssueCardViewState: Equatable {

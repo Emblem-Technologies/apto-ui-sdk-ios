@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 extension UIView {
   func fadeIn(animations: @escaping () -> Void, completion: ((Bool) -> Void)? = nil) {

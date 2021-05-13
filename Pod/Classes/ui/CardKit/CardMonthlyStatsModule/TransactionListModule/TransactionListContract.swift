@@ -6,7 +6,7 @@
 //
 
 import Bond
-import AptoSDK
+import UIKit
 
 public struct TransactionListModuleConfig {
   public let startDate: Date?

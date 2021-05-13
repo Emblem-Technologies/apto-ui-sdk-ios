@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
  
 struct TransferStatusItem {
   let title: String?

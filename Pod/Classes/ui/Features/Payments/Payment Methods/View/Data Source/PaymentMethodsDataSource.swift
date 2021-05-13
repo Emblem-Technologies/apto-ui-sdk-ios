@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 final class PaymentMethodsDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
   

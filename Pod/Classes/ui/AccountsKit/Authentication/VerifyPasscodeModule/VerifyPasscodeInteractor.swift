@@ -5,7 +5,7 @@
 //  Created by Takeichi Kanzaki on 26/11/2019.
 //
 
-import AptoSDK
+import UIKit
 
 class VerifyPasscodeInteractor: VerifyPasscodeInteractorProtocol {
   private let authenticationManager: AuthenticationManagerProtocol

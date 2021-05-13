@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 enum PaymentMethodType {
   case card

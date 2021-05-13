@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class ChangePasscodeModule: UIModule, ChangePasscodeModuleProtocol {
   private var presenter: ChangePasscodePresenterProtocol?

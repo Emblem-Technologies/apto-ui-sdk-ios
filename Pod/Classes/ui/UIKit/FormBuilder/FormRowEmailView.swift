@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 class FormRowEmailView: FormRowTextInputView {
   init(label: UILabel?,

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class VoIPModule: UIModule, VoIPModuleProtocol {
   private let card: Card

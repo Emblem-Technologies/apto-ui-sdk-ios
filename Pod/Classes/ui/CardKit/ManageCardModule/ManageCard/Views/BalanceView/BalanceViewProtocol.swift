@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 protocol BalancePresentationProtocol {
   func set(fundingSource: FundingSource)

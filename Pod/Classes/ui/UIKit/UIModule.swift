@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 open class UIModule: NSObject, UIModuleProtocol {
 

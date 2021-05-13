@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 import TTTAttributedLabel
 import WebKit
 

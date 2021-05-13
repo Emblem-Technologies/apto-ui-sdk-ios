@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class WebBrowserModule: UIModule {
   private let url: URL

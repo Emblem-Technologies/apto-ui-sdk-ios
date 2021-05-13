@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class FundingSourceSelectorModule: UIModule, FundingSourceSelectorModuleProtocol {
   private let card: Card

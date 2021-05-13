@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ViewWrapperCellController: CellController {
   private let view: UIView

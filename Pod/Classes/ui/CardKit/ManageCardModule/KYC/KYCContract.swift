@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 import Bond
 
 typealias KYCViewControllerProtocol = ShiftViewController & KYCViewProtocol

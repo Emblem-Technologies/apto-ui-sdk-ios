@@ -1,0 +1,6 @@
+framework module GoogleKit {
+  umbrella header "GoogleKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

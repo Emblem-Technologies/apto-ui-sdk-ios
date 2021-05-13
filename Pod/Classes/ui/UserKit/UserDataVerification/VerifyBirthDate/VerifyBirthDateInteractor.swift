@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class VerifyBirthDateInteractor: VerifyBirthDateInteractorProtocol {
   private unowned let dataReceiver: VerifyBirthDateDataReceiver

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 class AuthModule: UIModule, AuthModuleProtocol {
   private let config: AuthModuleConfig

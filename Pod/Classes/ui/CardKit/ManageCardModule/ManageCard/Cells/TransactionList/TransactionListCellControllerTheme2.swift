@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class TransactionListCellControllerTheme2: CellController {
   private let transaction: Transaction

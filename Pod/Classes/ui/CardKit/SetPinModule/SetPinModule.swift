@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class SetPinModule: UIModule, SetCodeModuleProtocol {
   private let card: Card

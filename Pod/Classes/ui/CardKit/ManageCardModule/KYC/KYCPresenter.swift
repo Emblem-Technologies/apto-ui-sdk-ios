@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 import Bond
 
 class KYCPresenter: KYCPresenterProtocol {

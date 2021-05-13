@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 import MapKit
 
 class TransactionListModule: UIModule, TransactionListModuleProtocol {

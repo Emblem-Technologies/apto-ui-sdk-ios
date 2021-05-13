@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 protocol VerifyDocumentRouterProtocol {
   func closeTappedInVerifyDocument()

@@ -1,4 +1,4 @@
-import AptoSDK
+import UIKit
 
 struct PCIConfiguration {
   let apiKey: String

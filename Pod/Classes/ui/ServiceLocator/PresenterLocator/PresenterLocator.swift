@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 final class PresenterLocator: PresenterLocatorProtocol {
   private unowned let serviceLocator: ServiceLocatorProtocol

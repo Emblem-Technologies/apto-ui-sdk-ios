@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 class ContentPresenterInteractor: ContentPresenterInteractorProtocol {
   private let content: Content

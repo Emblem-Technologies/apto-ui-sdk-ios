@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 import SnapKit
 import UIKit
 import AptoPCISDK

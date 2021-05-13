@@ -5,7 +5,7 @@
 //  Created by Takeichi Kanzaki on 17/09/2018.
 //
 
-import AptoSDK
+import UIKit
 import Bond
 
 protocol ContentPresenterRouter: class {

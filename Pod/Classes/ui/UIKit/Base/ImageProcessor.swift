@@ -6,6 +6,9 @@
 //
 //
 
+import Foundation
+import UIKit
+
 class ImageProcessor {
   func extractRectangle(image: UIImage) -> UIImage? {
     guard let docImage = CIImage(image: image), let rect = detectEdges(ciImage: docImage) else {

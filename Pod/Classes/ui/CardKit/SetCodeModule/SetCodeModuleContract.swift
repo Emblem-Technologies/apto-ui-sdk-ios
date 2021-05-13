@@ -1,4 +1,4 @@
-import AptoSDK
+import UIKit
 import Bond
 
 protocol SetCodeModuleProtocol: UIModuleProtocol {

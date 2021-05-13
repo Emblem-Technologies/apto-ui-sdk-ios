@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 class FormRowMultilineView: FormRowView {
   let flashColor: UIColor?

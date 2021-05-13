@@ -5,7 +5,7 @@
 // Created by Takeichi Kanzaki on 30/10/2018.
 //
 
-import AptoSDK
+import UIKit
 
 protocol AuthRouterProtocol: class {
   func close()

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class UITextFieldLengthLimiterDelegate: NSObject, UITextFieldDelegate {
   private let maxLength: Int

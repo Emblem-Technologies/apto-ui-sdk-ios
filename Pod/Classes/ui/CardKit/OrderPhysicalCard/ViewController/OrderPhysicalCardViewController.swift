@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 import SnapKit
 
 final class OrderPhysicalCardViewController: ShiftViewController {

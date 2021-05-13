@@ -1,6 +1,6 @@
 import Foundation
 import Bond
-import AptoSDK
+import UIKit
 
 private typealias ViewModel = AddCardViewModelType & AddCardViewModelInput & AddCardViewModelOutput
 

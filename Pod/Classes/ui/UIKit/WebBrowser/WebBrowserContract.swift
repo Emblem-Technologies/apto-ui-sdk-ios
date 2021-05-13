@@ -5,6 +5,9 @@
 // Created by Takeichi Kanzaki on 19/11/2018.
 //
 
+import Foundation
+import UIKit
+
 protocol WebBrowserRouterProtocol: class {
   func close()
 }

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 struct AuthenticationSettingContext {
     let isGlobalFaceIdEnabled: Bool

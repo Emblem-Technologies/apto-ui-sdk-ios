@@ -5,7 +5,7 @@
 //  Created by Takeichi Kanzaki on 14/01/2019.
 //
 
-import AptoSDK
+import UIKit
 
 class TransactionListInteractor: TransactionListInteractorProtocol {
   private let card: Card

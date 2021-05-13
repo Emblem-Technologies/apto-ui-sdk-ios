@@ -5,6 +5,9 @@
 //  Created by Takeichi Kanzaki on 13/02/2020.
 //
 
+import Foundation
+import UIKit
+
 class ChangePasscodeInteractor: ChangePasscodeInteractorProtocol {
   private let authenticationManager: AuthenticationManagerProtocol
 

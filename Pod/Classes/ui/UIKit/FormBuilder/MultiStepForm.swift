@@ -7,7 +7,7 @@
 //
 
 import SnapKit
-import AptoSDK
+import UIKit
 
 enum MultiStepFormAnimation {
   case none

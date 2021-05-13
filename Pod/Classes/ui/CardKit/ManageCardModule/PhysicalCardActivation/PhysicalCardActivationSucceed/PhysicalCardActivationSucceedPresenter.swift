@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class PhysicalCardActivationSucceedPresenter: PhysicalCardActivationSucceedPresenterProtocol {
   let viewModel = PhysicalCardActivationSucceedViewModel()

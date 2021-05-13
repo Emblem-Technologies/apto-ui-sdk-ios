@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class SetPinInteractor: SetCodeInteractorProtocol {
   private let platform: AptoPlatformProtocol

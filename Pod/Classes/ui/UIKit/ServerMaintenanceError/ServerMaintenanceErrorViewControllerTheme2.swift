@@ -5,7 +5,7 @@
 // Created by Takeichi Kanzaki on 21/12/2018.
 //
 
-import AptoSDK
+import UIKit
 import SnapKit
 
 class ServerMaintenanceErrorViewControllerTheme2: UIViewController {

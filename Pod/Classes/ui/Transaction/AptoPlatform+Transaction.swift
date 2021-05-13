@@ -1,4 +1,4 @@
-import AptoSDK
+import UIKit
  
 extension AptoPlatform {
   public var transaction: TransactionModule {

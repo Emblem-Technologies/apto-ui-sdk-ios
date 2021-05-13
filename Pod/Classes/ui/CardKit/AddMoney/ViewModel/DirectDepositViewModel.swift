@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 final class DirectDepositViewModel {
     private let loader: AptoPlatformProtocol

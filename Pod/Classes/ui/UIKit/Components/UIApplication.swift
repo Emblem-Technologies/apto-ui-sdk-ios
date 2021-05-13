@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension UIApplication {
   class func topViewController(_ base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController)

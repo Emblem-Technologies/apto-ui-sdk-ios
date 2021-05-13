@@ -5,8 +5,8 @@
 //  Created by Ivan Oliver Martínez on 08/03/2018.
 //
 
+import Foundation
 import UIKit
-import AptoSDK
 import MapKit
 
 class ManageCardModule: UIModule {

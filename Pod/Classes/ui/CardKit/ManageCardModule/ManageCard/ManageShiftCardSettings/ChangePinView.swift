@@ -5,8 +5,8 @@
 //  Created by Ivan Oliver Martínez on 13/03/2018.
 //
 
+import Foundation
 import UIKit
-import AptoSDK
 import SnapKit
 
 protocol ChangePinViewDelegate: class {

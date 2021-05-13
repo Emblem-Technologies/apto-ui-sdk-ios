@@ -5,8 +5,8 @@
 // Created by Takeichi Kanzaki on 2018-12-11.
 //
 
+import Foundation
 import UIKit
-import AptoSDK
 import SnapKit
 
 class BalanceViewTheme2: BalanceViewProtocol {

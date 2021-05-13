@@ -7,7 +7,7 @@
 
 import UIKit
 import SnapKit
-import AptoSDK
+import UIKit
 
 public final class HeaderTextView: UIView {
     let uiConfiguration: UIConfig

@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 protocol InteractorLocatorProtocol {
   func fullScreenDisclaimerInteractor(disclaimer: Content) -> FullScreenDisclaimerInteractorProtocol

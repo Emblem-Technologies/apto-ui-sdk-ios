@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class FullScreenDisclaimerModule: UIModule, FullScreenDisclaimerModuleProtocol {
   private let disclaimer: Content

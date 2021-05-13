@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 @objc open class UserDataCollectorConfig: NSObject {
   open var mode: UserDataCollectorFinalStepMode

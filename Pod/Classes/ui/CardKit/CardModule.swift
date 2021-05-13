@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 open class CardModule: UIModule {
   let launchOptions: CardModuleLaunchOptions

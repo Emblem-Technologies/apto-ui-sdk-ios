@@ -5,7 +5,7 @@
 //  Created by Takeichi Kanzaki on 11/02/2020.
 //
 
-import AptoSDK
+import UIKit
 import Bond
 
 protocol BiometricPermissionModuleProtocol: UIModuleProtocol {

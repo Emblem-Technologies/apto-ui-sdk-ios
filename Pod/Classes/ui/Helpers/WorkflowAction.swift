@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 extension WorkflowActionConfiguration {
   var presentationMode: UIViewControllerPresentationMode {

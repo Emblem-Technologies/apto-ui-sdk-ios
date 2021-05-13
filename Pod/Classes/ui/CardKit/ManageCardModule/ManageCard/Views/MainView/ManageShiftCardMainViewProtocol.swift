@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 protocol ManageCardMainViewDelegate: class {
   func cardTapped()

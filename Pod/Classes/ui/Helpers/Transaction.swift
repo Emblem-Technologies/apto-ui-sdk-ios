@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 extension MCCIcon {
   func image() -> UIImage? { // swiftlint:disable:this cyclomatic_complexity

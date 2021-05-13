@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class PhysicalCardActivationInteractor: PhysicalCardActivationInteractorProtocol {
   private let card: Card

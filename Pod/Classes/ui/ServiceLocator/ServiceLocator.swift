@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 class ServiceLocator: ServiceLocatorProtocol {
   static let shared: ServiceLocatorProtocol = ServiceLocator()
@@ -16,6 +16,8 @@ class ServiceLocator: ServiceLocatorProtocol {
   lazy var interactorLocator: InteractorLocatorProtocol = InteractorLocator(serviceLocator: self)
   lazy var viewLocator: ViewLocatorProtocol = ViewLocator(serviceLocator: self)
   lazy var systemServicesLocator: SystemServicesLocatorProtocol = SystemServicesLocator(serviceLocator: self)
+  lazy var storageLocator: StorageLocatorProtocol = StorageLocator(serviceLocator: self)
+  lazy var networkLocator: NetworkLocatorProtocol = NetworkLocator(serviceLocator: self)
 
   private(set) var platform: AptoPlatformProtocol = AptoPlatform.defaultManager()
   var uiConfig: UIConfig! // swiftlint:disable:this implicitly_unwrapped_optional

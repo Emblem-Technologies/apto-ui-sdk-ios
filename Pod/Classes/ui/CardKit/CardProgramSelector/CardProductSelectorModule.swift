@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class CardProductSelectorModule: UIModule, CardProductSelectorModuleProtocol {
   var onCardProductSelected: ((CardProductSummary) -> Void)?

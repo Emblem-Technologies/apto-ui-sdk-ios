@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 class NewCardModule: UIModule {
   private let initialDataPoints: DataPointList

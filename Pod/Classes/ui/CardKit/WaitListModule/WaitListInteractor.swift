@@ -5,7 +5,7 @@
 //  Created by Takeichi Kanzaki on 27/02/2019.
 //
 
-import AptoSDK
+import UIKit
 
 class WaitListInteractor: WaitListInteractorProtocol {
   private let application: CardApplication

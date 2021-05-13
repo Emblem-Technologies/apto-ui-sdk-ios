@@ -6,7 +6,7 @@
 //  Copyright © 2018 Shift. All rights reserved.
 //
 
-import AptoSDK
+import UIKit
 import SnapKit
 import Bond
 

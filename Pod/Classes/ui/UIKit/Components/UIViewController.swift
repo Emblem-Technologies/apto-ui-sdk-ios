@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 import SnapKit
 
 public enum SubviewPosition {

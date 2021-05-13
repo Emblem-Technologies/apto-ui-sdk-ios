@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '13.0'
+
+target 'EmblemAptoSDK' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for EmblemAptoSDK
+
+  pod 'Alamofire', '~> 4.8'
+  pod 'Bond', '~> 7.6'
+  pod 'SwiftyJSON', '~> 5.0'
+  pod 'GoogleKit', '~> 0.3'
+  pod 'PhoneNumberKit', '~> 3.2'
+  pod 'TrustKit', '~> 1.6'
+  pod 'FTLinearActivityIndicator', '1.2.1'
+  pod 'AlamofireNetworkActivityIndicator', '~> 2.2'
+  pod 'Mixpanel-swift', '~> 2.7'
+  pod 'AptoPCI', '2.1.0'
+  pod 'SnapKit', '~> 5.0'
+  pod 'TTTAttributedLabel', '~> 2.0'
+  pod 'Down', '~> 0.8.0'
+  pod 'PullToRefreshKit', '~> 0.8'
+  pod 'TwilioVoice', '~> 5.0.0'
+
+end

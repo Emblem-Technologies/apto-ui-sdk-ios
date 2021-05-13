@@ -1,6 +1,6 @@
 import UIKit
 import SnapKit
-import AptoSDK
+import UIKit
 
 final class TextInputView: UIView {
   private var uiConfig: UIConfig

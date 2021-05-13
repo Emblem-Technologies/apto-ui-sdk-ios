@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 public enum UserDataCollectorFinalStepMode {
   case updateUser

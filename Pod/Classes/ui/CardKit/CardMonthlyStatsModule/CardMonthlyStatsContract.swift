@@ -6,7 +6,7 @@
 //
 
 import Bond
-import AptoSDK
+import UIKit
 
 protocol CardMonthlyStatsModuleProtocol: UIModuleProtocol {
   func showTransactions(for categorySpending: CategorySpending, startDate: Date, endDate: Date)

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 open class FormRowSeparatorView: FormRowView {
   public init(backgroundColor: UIColor, height: CGFloat, showTopLine: Bool = false, showBottomLine: Bool = false) {

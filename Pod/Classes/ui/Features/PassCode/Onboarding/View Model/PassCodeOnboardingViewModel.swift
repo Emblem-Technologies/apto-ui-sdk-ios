@@ -1,5 +1,5 @@
 import Bond
-import AptoSDK
+import UIKit
 import ReactiveKit
 
 private typealias ViewModel = PassCodeOnboardingViewModelInput & PassCodeOnboardingViewModelOutput & PassCodeOnboardingViewModelType

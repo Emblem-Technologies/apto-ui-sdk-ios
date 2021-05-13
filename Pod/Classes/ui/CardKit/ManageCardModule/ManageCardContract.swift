@@ -5,7 +5,7 @@
 // Created by Takeichi Kanzaki on 23/11/2018.
 //
 
-import AptoSDK
+import UIKit
 import Bond
 
 protocol ManageCardRouterProtocol: class {

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class VerifyPasscodeModule: UIModule, VerifyPasscodeModuleProtocol {
   private var presenter: VerifyPasscodePresenterProtocol?

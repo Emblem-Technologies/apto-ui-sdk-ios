@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class CreatePasscodePresenter: CreatePasscodePresenterProtocol {
   var router: CreatePasscodeModuleProtocol?

@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 class ContentPresenterModule: UIModule, ContentPresenterModuleProtocol {
   private let content: Content

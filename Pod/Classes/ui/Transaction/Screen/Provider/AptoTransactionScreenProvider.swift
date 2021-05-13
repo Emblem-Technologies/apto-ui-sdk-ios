@@ -1,4 +1,4 @@
-import AptoSDK
+import UIKit
  
 internal struct AptoTransactionScreenProvider: TransactionScreenProvider {
   

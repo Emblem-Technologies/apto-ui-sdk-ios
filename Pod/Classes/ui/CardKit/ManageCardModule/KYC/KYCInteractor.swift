@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class KYCInteractor: KYCInteractorProtocol {
   private let platform: AptoPlatformProtocol

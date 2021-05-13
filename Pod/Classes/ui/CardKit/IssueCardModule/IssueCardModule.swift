@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 class IssueCardModule: UIModule, IssueCardModuleProtocol {
     private let application: CardApplication

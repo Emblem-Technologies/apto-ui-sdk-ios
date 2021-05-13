@@ -5,7 +5,7 @@
 // Created by Takeichi Kanzaki on 12/11/2018.
 //
 
-import AptoSDK
+import UIKit
 import SnapKit
 import Bond
 import ReactiveKit

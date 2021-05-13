@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class CategorySpendingCellController: CellController {
   private let categorySpending: CategorySpending

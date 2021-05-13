@@ -1,5 +1,5 @@
 import Bond
-import AptoSDK
+import UIKit
 
 private typealias ViewModel = TransferStatusViewModelType & TransferStatusViewModelInput & TransferStatusViewModelOutput
 

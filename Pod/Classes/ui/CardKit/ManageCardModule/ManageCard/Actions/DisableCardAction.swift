@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 class DisableCardAction {
   private let platform: AptoPlatformProtocol

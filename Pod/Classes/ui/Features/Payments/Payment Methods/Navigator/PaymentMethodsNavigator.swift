@@ -1,5 +1,5 @@
 import Foundation
-import AptoSDK
+import UIKit
 
 final class PaymentMethodsNavigator: PaymentMethodsNavigatorType {
   private var uiConfig: UIConfig

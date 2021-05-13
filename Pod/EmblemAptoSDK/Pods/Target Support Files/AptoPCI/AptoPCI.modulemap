@@ -1,0 +1,6 @@
+framework module AptoPCISDK {
+  umbrella header "AptoPCI-umbrella.h"
+
+  export *
+  module * { export * }
+}

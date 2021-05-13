@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class BiometricPermissionModule: UIModule, BiometricPermissionModuleProtocol {
   private var presenter: BiometricPermissionPresenterProtocol?

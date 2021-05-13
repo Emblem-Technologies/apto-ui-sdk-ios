@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 final class InteractorLocator: InteractorLocatorProtocol {
   private unowned let serviceLocator: ServiceLocatorProtocol

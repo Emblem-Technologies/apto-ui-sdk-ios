@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class ShowGenericMessageModule: UIModule {
   private let showGenericMessageAction: WorkflowAction

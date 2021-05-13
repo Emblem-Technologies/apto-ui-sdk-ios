@@ -5,7 +5,7 @@
 //  Created by Takeichi Kanzaki on 08/03/2019.
 //
 
-import AptoSDK
+import UIKit
 
 class NotificationPreferencesInteractor: NotificationPreferencesInteractorProtocol {
   private let platform: AptoPlatformProtocol

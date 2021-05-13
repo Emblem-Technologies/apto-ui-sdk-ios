@@ -5,7 +5,7 @@
 //  Created by Takeichi Kanzaki on 18/06/2019.
 //
 
-import AptoSDK
+import UIKit
 import Bond
 
 protocol VoIPModuleProtocol: UIModuleProtocol {

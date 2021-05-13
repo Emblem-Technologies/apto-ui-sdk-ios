@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 class IssueCardInteractor: IssueCardInteractorProtocol {
     private let platform: AptoPlatformProtocol

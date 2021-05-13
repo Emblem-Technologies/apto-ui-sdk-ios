@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class PodBundle: Bundle {
   public static func bundle() -> Bundle {

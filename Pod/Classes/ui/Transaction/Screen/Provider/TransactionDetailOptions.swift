@@ -1,4 +1,4 @@
-import AptoSDK
+import UIKit
 
 public struct TransactionDetailOptions {
   let transaction: Transaction

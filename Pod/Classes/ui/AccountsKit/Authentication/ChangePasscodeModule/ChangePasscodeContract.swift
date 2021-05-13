@@ -5,7 +5,7 @@
 //  Created by Takeichi Kanzaki on 28/11/2019.
 //
 
-import AptoSDK
+import UIKit
 import Bond
 
 protocol ChangePasscodeModuleProtocol: UIModuleProtocol {

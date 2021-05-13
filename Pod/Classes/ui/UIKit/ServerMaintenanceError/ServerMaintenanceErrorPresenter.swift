@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 class ServerMaintenanceErrorPresenter: ServerMaintenanceErrorPresenterProtocol {
   // swiftlint:disable implicitly_unwrapped_optional

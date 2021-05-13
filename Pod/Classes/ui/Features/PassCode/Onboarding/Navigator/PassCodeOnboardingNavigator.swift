@@ -1,5 +1,5 @@
 import Foundation
-import AptoSDK
+import UIKit
 
 protocol PassCodeOnboardingNavigatorType: AnyObject {
   func navigateToVerifyPhone(verificationType: VerificationParams<PhoneNumber, Verification>,

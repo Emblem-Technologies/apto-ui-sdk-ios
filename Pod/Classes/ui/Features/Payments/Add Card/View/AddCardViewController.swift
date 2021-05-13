@@ -1,6 +1,6 @@
 import UIKit
 import ReactiveKit
-import AptoSDK
+import UIKit
 
 final class AddCardViewController: UIViewController {
   private var uiConfig: UIConfig

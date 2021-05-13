@@ -5,7 +5,7 @@
 // Created by Takeichi Kanzaki on 12/11/2018.
 //
 
-import AptoSDK
+import UIKit
 
 protocol VerifyBirthDateModuleProtocol: UIModuleProtocol {
   var onVerificationPassed: ((_ verifyBirthDateModule: VerifyBirthDateModule,

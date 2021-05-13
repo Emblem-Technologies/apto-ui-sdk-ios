@@ -5,7 +5,7 @@
 //  Created by Takeichi Kanzaki on 19/10/2018.
 //
 
-import AptoSDK
+import UIKit
 import Bond
 
 typealias PhysicalCardActivationSucceedViewControllerProtocol = ShiftViewController

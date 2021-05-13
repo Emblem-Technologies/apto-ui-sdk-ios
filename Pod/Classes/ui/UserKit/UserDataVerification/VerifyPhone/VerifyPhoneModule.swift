@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 protocol VerifyPhoneModuleProtocol: UIModuleProtocol {
   var onVerificationPassed: ((_ verifyPhoneModule: VerifyPhoneModule,

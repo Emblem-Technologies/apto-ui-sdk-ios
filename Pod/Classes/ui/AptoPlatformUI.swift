@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 // Extensions do not allow properties, instead of getting crazy with associated objects we create private propeties.
 // This properties are made lazy by the compiler.

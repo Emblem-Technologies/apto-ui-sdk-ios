@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 public enum VerificationParams<D: DataPoint, V: Verification> {
 

@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 typealias OnKeyboardShown = (CGRect) -> Void
 typealias OnKeyboardHide = () -> Void

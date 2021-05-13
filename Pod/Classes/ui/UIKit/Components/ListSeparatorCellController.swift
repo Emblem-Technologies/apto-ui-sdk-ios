@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ListSeparatorCellController: CellController {
   private let backgroundColor: UIColor

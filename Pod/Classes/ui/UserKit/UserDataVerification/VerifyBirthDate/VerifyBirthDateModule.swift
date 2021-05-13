@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 class VerifyBirthDateModule: UIModule, VerifyBirthDateModuleProtocol {
   private let verificationType: VerificationParams<BirthDate, Verification>

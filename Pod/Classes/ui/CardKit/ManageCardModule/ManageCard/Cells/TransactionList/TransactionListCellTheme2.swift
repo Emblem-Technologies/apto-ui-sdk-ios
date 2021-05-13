@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 import SnapKit
 
 class TransactionListCellTheme2: UITableViewCell {

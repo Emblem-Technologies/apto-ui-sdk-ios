@@ -6,7 +6,7 @@
 //
 //
 
-import AptoSDK
+import UIKit
 
 final class ModuleLocator: ModuleLocatorProtocol {
   private unowned let serviceLocator: ServiceLocatorProtocol

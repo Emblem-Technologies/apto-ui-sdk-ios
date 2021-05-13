@@ -1,4 +1,4 @@
-import AptoSDK
+import UIKit
 
 public struct TransactionListOptions {
   public let card: Card

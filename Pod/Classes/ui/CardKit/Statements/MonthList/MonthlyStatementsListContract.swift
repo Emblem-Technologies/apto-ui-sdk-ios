@@ -6,7 +6,7 @@
 //
 
 import Bond
-import AptoSDK
+import UIKit
 
 protocol MonthlyStatementsListModuleProtocol: UIModuleProtocol {
   func showStatementReport(month: Month)

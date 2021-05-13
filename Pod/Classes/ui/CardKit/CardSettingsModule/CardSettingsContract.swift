@@ -7,7 +7,7 @@
 //
 
 import Bond
-import AptoSDK
+import UIKit
 
 protocol CardSettingsModuleDelegate: class {
   func showCardInfo()

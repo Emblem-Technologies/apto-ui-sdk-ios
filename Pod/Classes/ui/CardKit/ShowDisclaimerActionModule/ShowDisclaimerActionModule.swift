@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 
 protocol ShowDisclaimerActionModuleProtocol: UIModuleProtocol {
 }

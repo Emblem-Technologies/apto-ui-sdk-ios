@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+import UIKit
 
 class MonthlyStatementsReportInteractor: MonthlyStatementsReportInteractorProtocol {
   private let month: Month

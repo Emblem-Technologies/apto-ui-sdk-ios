@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AptoSDK
+import UIKit
 import Bond
 
 // swiftlint:disable:next line_length

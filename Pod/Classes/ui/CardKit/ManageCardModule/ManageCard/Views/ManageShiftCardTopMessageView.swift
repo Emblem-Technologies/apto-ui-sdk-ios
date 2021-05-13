@@ -5,7 +5,7 @@
 // Created by Takeichi Kanzaki on 15/10/2018.
 //
 
-import AptoSDK
+import UIKit
 import SnapKit
 
 struct ManageCardTopMessageViewConfig {

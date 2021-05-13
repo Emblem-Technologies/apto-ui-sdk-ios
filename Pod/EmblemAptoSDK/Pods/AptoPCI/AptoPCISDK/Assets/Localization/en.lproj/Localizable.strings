@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  
+
+  Created by Pau Teruel on 07/10/2019.
+  
+*/
+"inputCode.message" = "Enter the received code";
+"inputCode.okAction" = "Ok";
+"inputCode.cancelAction" = "Cancel";
+"wrongCode.message" = "Invalid code";
+"wrongCode.okAction" = "Ok";
