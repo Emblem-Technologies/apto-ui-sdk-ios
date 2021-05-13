@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-open class FundingSourceSelectorModule: UIModule, FundingSourceSelectorModuleProtocol {
+class FundingSourceSelectorModule: UIModule, FundingSourceSelectorModuleProtocol {
   let card: Card
   var presenter: FundingSourceSelectorPresenterProtocol?
   var externalOAuthModule: ExternalOAuthModule?

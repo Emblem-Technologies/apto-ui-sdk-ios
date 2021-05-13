@@ -1027,7 +1027,7 @@
 		9D3BEEF3264D6A1D00BA9D8B /* SetPinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPinInteractor.swift; sourceTree = "<group>"; };
 		9D3BEEF4264D6A1D00BA9D8B /* SetPinModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPinModule.swift; sourceTree = "<group>"; };
 		9D3BEEF6264D6A1D00BA9D8B /* TwilioVoIPImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwilioVoIPImpl.swift; sourceTree = "<group>"; };
-		9D3BEEF7264D6A1D00BA9D8B /* AptoPlatformUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AptoPlatformUI.swift; sourceTree = "<group>"; tabWidth = 2; };
+		9D3BEEF7264D6A1D00BA9D8B /* AptoPlatformUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AptoPlatformUI.swift; sourceTree = "<group>"; tabWidth = 2; };
 		9D3BEEF9264D6A1D00BA9D8B /* CountDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
 		9D3BEEFA264D6A1D00BA9D8B /* DateProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateProvider.swift; sourceTree = "<group>"; };
 		9D3BEEFB264D6A1D00BA9D8B /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
