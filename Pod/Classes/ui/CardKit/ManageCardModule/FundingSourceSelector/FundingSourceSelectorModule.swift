@@ -13,7 +13,7 @@ public class FundingSourceSelectorModule: UIModule, FundingSourceSelectorModuleP
   private var presenter: FundingSourceSelectorPresenterProtocol?
   private var externalOAuthModule: ExternalOAuthModule?
 
-  init(serviceLocator: ServiceLocatorProtocol, card: Card) {
+  public init(serviceLocator: ServiceLocatorProtocol, card: Card) {
     self.card = card
     super.init(serviceLocator: serviceLocator)
   }
@@ -26,7 +26,7 @@ public class FundingSourceSelectorModule: UIModule, FundingSourceSelectorModuleP
     finish()
   }
 
-  func addFundingSource(completion: @escaping (FundingSource) -> Void) {
+  public func addFundingSource(completion: @escaping (FundingSource) -> Void) {
     guard let allowedBalanceTypes = card.features?.allowedBalanceTypes, !allowedBalanceTypes.isEmpty else {
       return
     }
@@ -67,7 +67,7 @@ public class FundingSourceSelectorModule: UIModule, FundingSourceSelectorModuleP
   }
 
   // MARK: - Private methods
-  func buildViewController() -> ShiftViewController {
+  public func buildViewController() -> ShiftViewController {
     let presenterConfig = FundingSourceSelectorPresenterConfig(
       hideFundingSourcesReconnectButton: platform.isFeatureEnabled(.hideFundingSourcesReconnectButton)
     )
