@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public protocol StorageLocatorProtocol {
+protocol StorageLocatorProtocol {
   func userStorage(transport: JSONTransport) -> UserStorageProtocol
   func configurationStorage(transport: JSONTransport) -> ConfigurationStorageProtocol
   func cardApplicationsStorage(transport: JSONTransport) -> CardApplicationsStorageProtocol
