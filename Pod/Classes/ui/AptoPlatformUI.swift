@@ -323,6 +323,14 @@ extension AptoPlatform {
 //        let mod = ManageCardModule(serviceLocator: serviceLocator, card: card, mode: .embedded)
         mod.navigationController = from.navigationController
         mod.showAddFunds(for: card)
+        
+        mod.onClose = { m in
+            mod.dismissModule(animated: true) {
+                print("closing")
+            }
+            
+            
+        }
 //        let pro = mod.showAddFunding(from: from)
 //        mod.present(module: pro) { result in
 //            completion(result)
