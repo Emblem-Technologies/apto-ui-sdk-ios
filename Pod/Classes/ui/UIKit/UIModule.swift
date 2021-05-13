@@ -441,6 +441,25 @@ extension UIViewController {
       }
     }
   }
+    
+    public func present(vc: UIViewController,
+                        animated: Bool = true,
+                        leftButtonMode: UIViewControllerLeftButtonMode = .back,
+                        uiConfig: UIConfig,
+                        completion: @escaping Result<UIViewController, NSError>.Callback) {
+        let newNavigationController = UINavigationController(rootViewController: vc)
+        newNavigationController.navigationBar.setUpWith(uiConfig: uiConfig)
+//        module.navigationController = newNavigationController
+        vc.configureLeftNavButton(mode: leftButtonMode, uiConfig: uiConfig)
+        if #available(iOS 13.0, *), newNavigationController.modalPresentationStyle != .overCurrentContext {
+          newNavigationController.isModalInPresentation = true
+          newNavigationController.modalPresentationStyle = .fullScreen
+        }
+        self.present(newNavigationController, animated: animated) {
+          completion(.success(vc))
+        }
+    }
+    
 
   public func configureLeftNavButton(mode: UIViewControllerLeftButtonMode?, uiConfig: UIConfig?) {
     guard !navigationItem.hidesBackButton else {

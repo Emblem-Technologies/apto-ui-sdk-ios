@@ -9,9 +9,10 @@ final class AddFundsView: UIView {
     static let maxAllowedDigit = 4
 
   private lazy var textField: UITextField = {
-    let textField = ComponentCatalog.textFieldWith(placeholder: "$0",placeholderColor: uiConfig.textSecondaryColor, font: .boldSystemFont(ofSize: 62), textColor: uiConfig.textPrimaryColor)
+    let textField = ComponentCatalog.textFieldWith(placeholder: "$0",placeholderColor: uiConfig.textSecondaryColor, font: .boldSystemFont(ofSize: 80), textColor: uiConfig.textPrimaryColor)
     textField.keyboardType = .decimalPad
     textField.textAlignment = .center
+    textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     return textField
   }()
   private lazy var currentCardView = CurrentCardView()
@@ -32,7 +33,7 @@ final class AddFundsView: UIView {
   private lazy var stackView: UIStackView = {
     let stackView = UIStackView()
     stackView.axis = .vertical
-    stackView.spacing = 10
+    stackView.spacing = 20
     return stackView
   }()
   
@@ -67,6 +68,7 @@ final class AddFundsView: UIView {
                                                   uiConfig: uiConfig) { [weak self] in
 //        self.view.endEditing(true)
 //        self.nextTapped()
+        self?.textField.endEditing(true)
         self?.viewModel?.input.didTapOnPullFunds()
     }
     self.nextButton.isHidden = true
@@ -132,12 +134,12 @@ final class AddFundsView: UIView {
   
   private func watchKeyboard() {
     keyboardWatcher.startWatching(onKeyboardShown: { [weak self] size in
-      guard let self = self else { return }
-      self.textField.snp.updateConstraints { constraints in
-        constraints.bottom.equalToSuperview().inset(size.height + 80)
+//      guard let self = self else { return }
+      self?.textField.snp.updateConstraints { constraints in
+        constraints.bottom.equalToSuperview().inset(size.height + 125)
       }
-      self.stackView.snp.updateConstraints { constraints in
-        constraints.bottom.equalToSuperview().inset(size.height + 16)
+      self?.stackView.snp.updateConstraints { constraints in
+        constraints.bottom.equalToSuperview().inset(size.height + 30)
       }
     })
   }
@@ -157,7 +159,7 @@ final class AddFundsView: UIView {
     stackView.snp.makeConstraints { constraints in
       constraints.leading.equalToSuperview().offset(16)
       constraints.trailing.equalToSuperview().inset(16)
-      constraints.bottom.equalToSuperview().inset(16)
+      constraints.bottom.equalToSuperview().inset(24)
     }
     
     nextButton.snp.makeConstraints { constraints in
@@ -181,23 +183,40 @@ final class AddFundsView: UIView {
 
 // MARK: - UITextField
 extension AddFundsView: UITextFieldDelegate {
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        guard let text = textField.text else { return }
+        print("search text bar: ", text)
+        textField.text = "\(textField.text!)".replacingOccurrences(of: "$", with: "")
+        textField.text = "$\(textField.text!)"
+        if textField.text! == "$" {
+            textField.text = ""
+        }
+        if text.count + 1 <= AddFundsView.maxAllowedDigit {
+            didChangeAmountValue?(updateAmountIfNeeded(lastChar: "", text: textField.text!))
+        } else {
+            didChangeAmountValue?(updateAmountIfNeeded(lastChar: "", text: textField.text!))
+        }
+    }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         dailyLimitError("", show: false)
+        print("Text: ", textField.text)
         if (!string.isEmpty && !Character(string).isNumber) {
             return false
         }
 
         guard let text = textField.text else { return false }
         
-        if text.count == 1 && string.isEmpty {
-            didChangeAmountValue?(nil)
-        } else {
+//        if text.count == 1 && string.isEmpty {
+//            didChangeAmountValue?(nil)
+//        } else {
             if text.count + 1 <= AddFundsView.maxAllowedDigit {
                 didChangeAmountValue?(updateAmountIfNeeded(lastChar: string, text: text + string))
             } else {
                 didChangeAmountValue?(updateAmountIfNeeded(lastChar: string, text: text))
             }
-        }
+//        }
         
         if string.isEmpty && text.count <= AddFundsView.maxAllowedDigit {
             return true
@@ -206,7 +225,8 @@ extension AddFundsView: UITextFieldDelegate {
     }
     
     private func updateAmountIfNeeded(lastChar: String, text: String) -> String {
-        let amount = lastChar.isEmpty ? String(text.dropLast()) : text
+//        let amount = lastChar.isEmpty ? String(text.dropLast()) : text
+        let amount = text.replacingOccurrences(of: "$", with: "")
         if let d = Double(amount) {
             return d.dollarVal()
         } else {
@@ -223,8 +243,8 @@ extension Double {
         let currencyFormatter = NumberFormatter()
         currencyFormatter.usesGroupingSeparator = true
         currencyFormatter.numberStyle = .currency
-//        currencyFormatter.allowsFloats = false
-//        currencyFormatter.alwaysShowsDecimalSeparator = false
+        currencyFormatter.allowsFloats = false
+        currencyFormatter.alwaysShowsDecimalSeparator = false
         // localize to your grouping and decimal separator
         currencyFormatter.locale = Locale.current
         if let val = currencyFormatter.string(from: NSNumber(value: num)) {

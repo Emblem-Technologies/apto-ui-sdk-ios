@@ -119,10 +119,18 @@ final class AddCardView: UIView {
   
   private func setupView() {
     backgroundColor = .white
-    self.addCardButton = .roundedButtonWith("load_funds.add_card.primary_cta".podLocalized(), backgroundColor: .blue, cornerRadius: 24) { [weak self] in
-      self?.endEditing(true)
-      self?.viewModel?.input.didTapOnAddCard()
+    self.addCardButton = ComponentCatalog.buttonWith(title: "load_funds.add_card.primary_cta".podLocalized(),
+                                                     showShadow: false,
+                                                     accessibilityLabel: "Continue button",
+                                                     uiConfig: uiConfig) { [weak self] in
+        
+        self?.endEditing(true)
+        self?.viewModel?.input.didTapOnAddCard()
     }
+//    self.addCardButton = .roundedButtonWith("load_funds.add_card.primary_cta".podLocalized(), backgroundColor: .blue, cornerRadius: 24) { [weak self] in
+//      self?.endEditing(true)
+//      self?.viewModel?.input.didTapOnAddCard()
+//    }
     
     secondaryStackView.addArrangedSubview(expirationDateInputView)
     secondaryStackView.addArrangedSubview(cvvCodeInputView)

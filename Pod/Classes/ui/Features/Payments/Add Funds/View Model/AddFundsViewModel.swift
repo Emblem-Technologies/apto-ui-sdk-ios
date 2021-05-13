@@ -83,35 +83,83 @@ final class AddFundsViewModel: ViewModel {
   
   func didTapOnPullFunds() {
     self.state.send(.loading)
-
-    guard let paymentSourceId = self.currentPaymentSource?.id,
-      let balanceId = self.card.fundingSource?.fundingSourceId else {
-      self.state.send(.idle)
-      return
+    AptoPlatform.defaultManager().fetchCard(self.card.accountId, forceRefresh: true, retrieveBalances: true) { result in
+        switch result {
+        case .success(let card):
+//            self.state.send(.loading)
+            print("CURRENT SOURCE: ", self.currentPaymentSource?.id)
+            print("BALACNEID: ", card.fundingSource?.fundingSourceId)
+            
+            guard let paymentSourceId = self.currentPaymentSource?.id,
+              let balanceId = card.fundingSource?.fundingSourceId else {
+              self.state.send(.idle)
+                print("FAILED FUNDING!")
+              return
+            }
+            print("AMOUNT: ", self.amount)
+            let request = PushFundsRequest(
+              paymentSourceId: paymentSourceId,
+              balanceId: balanceId,
+              amount: Amount(
+                value: self.amount,
+                currency: self.card.fundingSource?.balance?.currency.value
+              )
+            )
+            self.pushFunds(with: request)
+//            AptoPlatform.defaultManager().add
+        case .failure(let error):
+            print("FUNDING ERROR: ", error)
+        }
     }
-    
-    let request = PushFundsRequest(
-      paymentSourceId: paymentSourceId,
-      balanceId: balanceId,
-      amount: Amount(
-        value: self.amount,
-        currency: self.card.fundingSource?.balance?.currency.value
-      )
-    )
-    self.pushFunds(with: request)
+//    self.state.send(.loading)
+//    print("CURRENT SOURCE: ", self.currentPaymentSource?.id)
+//    print("BALACNEID: ", self.card.fundingSource?.fundingSourceId)
+//    guard let paymentSourceId = self.currentPaymentSource?.id,
+//      let balanceId = self.card.fundingSource?.fundingSourceId else {
+//      self.state.send(.idle)
+//        print("FAILED FUNDING!")
+//      return
+//    }
+//
+//    let request = PushFundsRequest(
+//      paymentSourceId: paymentSourceId,
+//      balanceId: balanceId,
+//      amount: Amount(
+//        value: self.amount,
+//        currency: self.card.fundingSource?.balance?.currency.value
+//      )
+//    )
+//    self.pushFunds(with: request)
   }
   
   private func pushFunds(with request: PushFundsRequest) {
-    self.apto.pushFunds(with: request) { [weak self] result in
-      guard let self = self else { return }
-      switch result {
-      case .success(let paymentResult):
-        self.state.send(.idle)
-        self.handle(paymentResult)
-      case .failure(let error):
-        self.state.send(.error(error))
-      }
+//    AptoPlatform.defaultManager().cur
+//    AptoPlatform.defaultManager().cu/
+    print("CURRENT TOKEN: ", AptoPlatform.defaultManager().currentToken())
+    AptoPlatform.defaultManager().pushFunds(with: request) { [weak self] result in
+        guard let self = self else { return }
+        switch result {
+        case .success(let paymentResult):
+          self.state.send(.idle)
+          self.handle(paymentResult)
+          print("FUNDING RESULT: ", paymentResult)
+        case .failure(let error):
+          self.state.send(.error(error))
+          print("FUNDING RESULT: ", error)
+        }
     }
+//    self.apto.pushFunds(with: request) { [weak self] result in
+//      guard let self = self else { return }
+//      switch result {
+//      case .success(let paymentResult):
+//        self.state.send(.idle)
+//        self.handle(paymentResult)
+//        print("FUNDING RESULT: ", paymentResult)
+//      case .failure(let error):
+//        self.state.send(.error(error))
+//        print("FUNDING RESULT: ", error)
+//      }
+//    }
   }
   
   private func handle(_ paymentResult: PaymentResult) {
