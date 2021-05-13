@@ -160,7 +160,8 @@ open class CardModule: UIModule {
     case .manageCard(cardId: let cardId):
       launchManageCardFlow(cardId: cardId, addChild: addChild, pushModule: pushModule, completion: completion)
     case .fullSDK:
-      launchFullFlow(addChild: addChild, pushModule: pushModule, completion: completion)
+//      launchFullFlow(addChild: addChild, pushModule: pushModule, completion: completion)
+        self.close()
     }
   }
 
