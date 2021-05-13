@@ -32,7 +32,6 @@ Pod::Spec.new do |s|
   s.resources = ["Pod/Assets/*.png", "Pod/Assets/*.css", "Pod/Localization/*.lproj", "Pod/Assets/*.xcassets", "Pod/Fonts/*.ttf"]
 
   s.frameworks = 'UIKit', 'CoreLocation', 'Accelerate', 'AudioToolbox', 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'Foundation', 'MobileCoreServices', 'OpenGLES', 'QuartzCore', 'Security', 'LocalAuthentication', 'CallKit'
-  s.dependency 'AptoSDK', '3.3.0'
   s.dependency 'AptoPCI', '2.1.0'
   s.dependency 'SnapKit', '~> 5.0'
   s.dependency 'Bond', '~> 7.6'
