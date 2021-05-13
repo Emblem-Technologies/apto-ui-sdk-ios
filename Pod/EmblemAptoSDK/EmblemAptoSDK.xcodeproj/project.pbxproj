@@ -1390,7 +1390,6 @@
 			children = (
 				9D3BECB5264D6A1C00BA9D8B /* Classes */,
 				9D3BF371264D6D1800BA9D8B /* Localization */,
-				9D3BF263264D6D0900BA9D8B /* core */,
 				9D3BEF09264D6A1D00BA9D8B /* Fonts */,
 				9D3BEF0B264D6A1D00BA9D8B /* Assets */,
 				9D3BEFB3264D6A1D00BA9D8B /* Localization */,
@@ -1410,6 +1409,7 @@
 		9D3BECB6264D6A1C00BA9D8B /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9D3BF263264D6D0900BA9D8B /* core */,
 				9D3BECB7264D6A1C00BA9D8B /* AptoPlatformUIProtocol.swift */,
 				9D3BECB8264D6A1C00BA9D8B /* Transaction */,
 				9D3BECCD264D6A1C00BA9D8B /* UserKit */,
