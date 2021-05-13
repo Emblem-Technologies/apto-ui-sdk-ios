@@ -68,7 +68,7 @@ private extension FormRowPhoneFieldView {
         make.top.equalToSuperview().offset(20)
       }
       make.left.right.bottom.equalToSuperview()
-      make.bottom.equalToSuperview().offset(20)
+      make.bottom.equalToSuperview().offset(-20)
     }
   }
 }
