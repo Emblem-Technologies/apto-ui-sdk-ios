@@ -571,6 +571,13 @@
 		9DF8851F264D803D005B45DC /* StorageLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8851D264D803D005B45DC /* StorageLocator.swift */; };
 		9DF88523264D804A005B45DC /* NetworkLocatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF88521264D804A005B45DC /* NetworkLocatorProtocol.swift */; };
 		9DF88524264D804A005B45DC /* NetworkLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF88522264D804A005B45DC /* NetworkLocator.swift */; };
+		9DF8852D264D8804005B45DC /* AptoMonthlySpending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF88526264D8804005B45DC /* AptoMonthlySpending.swift */; };
+		9DF8852E264D8804005B45DC /* AptoCategorySpending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF88527264D8804005B45DC /* AptoCategorySpending.swift */; };
+		9DF8852F264D8804005B45DC /* AptoNotificationPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF88528264D8804005B45DC /* AptoNotificationPreferences.swift */; };
+		9DF88530264D8804005B45DC /* AptoPhysicalCardActivationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF88529264D8804005B45DC /* AptoPhysicalCardActivationResult.swift */; };
+		9DF88531264D8804005B45DC /* AptoMCCIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8852A264D8804005B45DC /* AptoMCCIcon.swift */; };
+		9DF88532264D8804005B45DC /* AptoTransactionListFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8852B264D8804005B45DC /* AptoTransactionListFilters.swift */; };
+		9DF88533264D8804005B45DC /* AptoCardProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8852C264D8804005B45DC /* AptoCardProduct.swift */; };
 		F35298760DA2FCF1FE87D5CD /* Pods_EmblemAptoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF881AC9DFA80736BC0AD0D /* Pods_EmblemAptoSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -1325,6 +1332,13 @@
 		9DF8851D264D803D005B45DC /* StorageLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageLocator.swift; sourceTree = "<group>"; };
 		9DF88521264D804A005B45DC /* NetworkLocatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLocatorProtocol.swift; sourceTree = "<group>"; };
 		9DF88522264D804A005B45DC /* NetworkLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLocator.swift; sourceTree = "<group>"; };
+		9DF88526264D8804005B45DC /* AptoMonthlySpending.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AptoMonthlySpending.swift; sourceTree = "<group>"; };
+		9DF88527264D8804005B45DC /* AptoCategorySpending.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AptoCategorySpending.swift; sourceTree = "<group>"; };
+		9DF88528264D8804005B45DC /* AptoNotificationPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AptoNotificationPreferences.swift; sourceTree = "<group>"; };
+		9DF88529264D8804005B45DC /* AptoPhysicalCardActivationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AptoPhysicalCardActivationResult.swift; sourceTree = "<group>"; };
+		9DF8852A264D8804005B45DC /* AptoMCCIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AptoMCCIcon.swift; sourceTree = "<group>"; };
+		9DF8852B264D8804005B45DC /* AptoTransactionListFilters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AptoTransactionListFilters.swift; sourceTree = "<group>"; };
+		9DF8852C264D8804005B45DC /* AptoCardProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AptoCardProduct.swift; sourceTree = "<group>"; };
 		B7F071A94D3DA13312064F44 /* Pods-EmblemAptoSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmblemAptoSDK.debug.xcconfig"; path = "Target Support Files/Pods-EmblemAptoSDK/Pods-EmblemAptoSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1409,6 +1423,7 @@
 		9D3BECB6264D6A1C00BA9D8B /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9DF88525264D8804005B45DC /* Wrappers */,
 				9D3BF263264D6D0900BA9D8B /* core */,
 				9D3BECB7264D6A1C00BA9D8B /* AptoPlatformUIProtocol.swift */,
 				9D3BECB8264D6A1C00BA9D8B /* Transaction */,
@@ -3495,6 +3510,20 @@
 			path = NetworkLocator;
 			sourceTree = "<group>";
 		};
+		9DF88525264D8804005B45DC /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				9DF88526264D8804005B45DC /* AptoMonthlySpending.swift */,
+				9DF88527264D8804005B45DC /* AptoCategorySpending.swift */,
+				9DF88528264D8804005B45DC /* AptoNotificationPreferences.swift */,
+				9DF88529264D8804005B45DC /* AptoPhysicalCardActivationResult.swift */,
+				9DF8852A264D8804005B45DC /* AptoMCCIcon.swift */,
+				9DF8852B264D8804005B45DC /* AptoTransactionListFilters.swift */,
+				9DF8852C264D8804005B45DC /* AptoCardProduct.swift */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3720,6 +3749,7 @@
 				9D3BF353264D6D0900BA9D8B /* VoIPProtocol.swift in Sources */,
 				9D3BF0AF264D6A1E00BA9D8B /* TransactionListState.swift in Sources */,
 				9D3BF12F264D6A1E00BA9D8B /* FormRowNumericSliderView.swift in Sources */,
+				9DF8852D264D8804005B45DC /* AptoMonthlySpending.swift in Sources */,
 				9D3BF157264D6A1E00BA9D8B /* PinEntryView.swift in Sources */,
 				9D3BF0FC264D6A1E00BA9D8B /* VerifyPasscodePresenter.swift in Sources */,
 				9D3BF23E264D6A1F00BA9D8B /* AccountSettingsPresenter.swift in Sources */,
@@ -3728,6 +3758,7 @@
 				9D3BF366264D6D0900BA9D8B /* UIFontProvider.swift in Sources */,
 				9D3BF13C264D6A1E00BA9D8B /* FormRowCustomView.swift in Sources */,
 				9D3BF163264D6A1F00BA9D8B /* PhoneTextField.swift in Sources */,
+				9DF88530264D8804005B45DC /* AptoPhysicalCardActivationResult.swift in Sources */,
 				9D3BF362264D6D0900BA9D8B /* DateFormatter.swift in Sources */,
 				9D3BF176264D6A1F00BA9D8B /* DoubleCheckbox.swift in Sources */,
 				9D3BF2F5264D6D0900BA9D8B /* DataPointSerializer.swift in Sources */,
@@ -3737,6 +3768,7 @@
 				9D3BF139264D6A1E00BA9D8B /* FormRowSwitchTitleSubtitleView.swift in Sources */,
 				9D3BF16C264D6A1F00BA9D8B /* CellController.swift in Sources */,
 				9D3BF1B9264D6A1F00BA9D8B /* AddFundsViewModelType.swift in Sources */,
+				9DF88533264D8804005B45DC /* AptoCardProduct.swift in Sources */,
 				9D3BF308264D6D0900BA9D8B /* VoIPStorage.swift in Sources */,
 				9D3BF151264D6A1E00BA9D8B /* ImageCache.swift in Sources */,
 				9D3BF0FA264D6A1E00BA9D8B /* CreatePasscodeInteractor.swift in Sources */,
@@ -3781,6 +3813,7 @@
 				9D3BF1D1264D6A1F00BA9D8B /* WaitListModule.swift in Sources */,
 				9D3BF0F8264D6A1E00BA9D8B /* CreatePasscodeViewController.swift in Sources */,
 				9D3BF0E7264D6A1E00BA9D8B /* DataConfirmationViewControllerTheme2.swift in Sources */,
+				9DF88531264D8804005B45DC /* AptoMCCIcon.swift in Sources */,
 				9D3BF187264D6A1F00BA9D8B /* VoIPContract.swift in Sources */,
 				9D3BF1AE264D6A1F00BA9D8B /* TransferStatusNavigatorType.swift in Sources */,
 				9D3BF19E264D6A1F00BA9D8B /* PaymentMethodsView.swift in Sources */,
@@ -3987,6 +4020,7 @@
 				9D3BF1D4264D6A1F00BA9D8B /* OrderPhysicalCardViewModel.swift in Sources */,
 				9D3BF1E4264D6A1F00BA9D8B /* MonthlyStatementsReportPresenter.swift in Sources */,
 				9D3BF352264D6D0900BA9D8B /* BasicTypes.swift in Sources */,
+				9DF8852F264D8804005B45DC /* AptoNotificationPreferences.swift in Sources */,
 				9D3BF186264D6A1F00BA9D8B /* UIModuleProtocol.swift in Sources */,
 				9D3BF32B264D6D0900BA9D8B /* AccessToken.swift in Sources */,
 				9D3BF2FB264D6D0900BA9D8B /* JSONResponseParser.swift in Sources */,
@@ -4044,6 +4078,7 @@
 				9D3BF2F7264D6D0900BA9D8B /* NetworkManager.swift in Sources */,
 				9D3BF166264D6A1F00BA9D8B /* ListSeparatorCell.swift in Sources */,
 				9D3BF200264D6A1F00BA9D8B /* TransactionListDataSource.swift in Sources */,
+				9DF88532264D8804005B45DC /* AptoTransactionListFilters.swift in Sources */,
 				9D3BF0FD264D6A1E00BA9D8B /* VerifyPasscodeInteractor.swift in Sources */,
 				9D3BF31C264D6D0900BA9D8B /* NotificationHandlerImpl.swift in Sources */,
 				9D3BF25F264D6A1F00BA9D8B /* CardAdditionalFields.swift in Sources */,
@@ -4128,6 +4163,7 @@
 				9D3BF369264D6D0900BA9D8B /* UIConfig.swift in Sources */,
 				9D3BF15E264D6A1E00BA9D8B /* RangeSlider.swift in Sources */,
 				9D3BF356264D6D0900BA9D8B /* PatternTextValidator.swift in Sources */,
+				9DF8852E264D8804005B45DC /* AptoCategorySpending.swift in Sources */,
 				9D3BF340264D6D0900BA9D8B /* TransactionModel.swift in Sources */,
 				9D3BF1FE264D6A1F00BA9D8B /* CardMonthlyStatsViewController.swift in Sources */,
 				9D3BF21A264D6A1F00BA9D8B /* PhysicalCardActivationModule.swift in Sources */,

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+//import AptoSDK
 
 public class AptoPhysicalCardActivationResult: NSObject {
   public let isCardActive: Bool

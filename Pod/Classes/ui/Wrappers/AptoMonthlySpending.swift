@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+//import AptoSDK
 
 @objc public class AptoMonthlySpending: NSObject {
   public let previousSpendingExists: Bool

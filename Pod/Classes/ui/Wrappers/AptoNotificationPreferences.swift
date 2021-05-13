@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+//import AptoSDK
 
 @objc public enum AptoNotificationGroupId: Int {
   case paymentSuccessful

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import AptoSDK
+//import AptoSDK
 
 @objc public class AptoCategorySpending: NSObject {
   public let categoryId: AptoMCCIcon
