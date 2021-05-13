@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class FundingSourceSelectorModule: UIModule, FundingSourceSelectorModuleProtocol {
+public class FundingSourceSelectorModule: UIModule, FundingSourceSelectorModuleProtocol {
   private let card: Card
   private var presenter: FundingSourceSelectorPresenterProtocol?
   private var externalOAuthModule: ExternalOAuthModule?
@@ -18,7 +18,7 @@ class FundingSourceSelectorModule: UIModule, FundingSourceSelectorModuleProtocol
     super.init(serviceLocator: serviceLocator)
   }
 
-  override func initialize(completion: @escaping Result<UIViewController, NSError>.Callback) {
+  public override func initialize(completion: @escaping Result<UIViewController, NSError>.Callback) {
     completion(.success(buildViewController()))
   }
 
@@ -67,7 +67,7 @@ class FundingSourceSelectorModule: UIModule, FundingSourceSelectorModuleProtocol
   }
 
   // MARK: - Private methods
-  private func buildViewController() -> ShiftViewController {
+  func buildViewController() -> ShiftViewController {
     let presenterConfig = FundingSourceSelectorPresenterConfig(
       hideFundingSourcesReconnectButton: platform.isFeatureEnabled(.hideFundingSourcesReconnectButton)
     )
