@@ -42,4 +42,9 @@ Pod::Spec.new do |s|
   s.dependency 'Down', '~> 0.8.0'
   s.dependency 'PullToRefreshKit', '~> 0.8'
   s.dependency 'TwilioVoice', '~> 5.0.0'
+  s.dependency 'Alamofire', '~> 4.8'
+  s.dependency 'SwiftyJSON', '~> 5.0'
+  s.dependency 'FTLinearActivityIndicator', '1.2.1'
+  s.dependency 'AlamofireNetworkActivityIndicator', '~> 2.2'
+  s.dependency 'Mixpanel-swift', '~> 2.7'
 end
