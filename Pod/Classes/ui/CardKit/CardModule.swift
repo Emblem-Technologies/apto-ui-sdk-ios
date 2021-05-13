@@ -124,9 +124,12 @@ open class CardModule: UIModule {
       }
       wself.userDataPoints = user.userData.copy() as! DataPointList // swiftlint:disable:this force_cast
       // There's a user. Check if he has already cards.
-      wself.showExistingOrNewCardModule { _ in
-        wself.authModule = nil
-      }
+        self.dismissModule(animated: true) {
+            print("dismissing card module")
+        }
+//      wself.showExistingOrNewCardModule { _ in
+//        wself.authModule = nil
+//      }
     }
     self.authModule = authModule
     if addChild {
@@ -152,7 +155,8 @@ open class CardModule: UIModule {
                                                completion: @escaping Result<UIViewController, NSError>.Callback) {
     switch launchOptions.initialFlow {
     case .newCardApplication:
-      launchNewCardApplicationFlow(addChild: addChild, completion: completion)
+//      launchNewCardApplicationFlow(addChild: addChild, completion: completion)
+        self.close()
     case .manageCard(cardId: let cardId):
       launchManageCardFlow(cardId: cardId, addChild: addChild, pushModule: pushModule, completion: completion)
     case .fullSDK:
