@@ -309,26 +309,31 @@ extension AptoPlatform {
     
     public func showFundingPage(from: UIViewController, card: Card,
                               mode: AptoUISDKMode,
-                              options: CardOptions? = nil,
-                              initialUserData: DataPointList? = nil,
-                              initializationData: InitializationData? = nil,
-                              googleMapsApiKey: String? = nil,
                               completion: @escaping (Result<UIModule, NSError>.Callback)) {
-        let launchOptions = CardModuleLaunchOptions(mode: mode,
-                                                    initialUserData: initialUserData,
-                                                    initializationData: initializationData,
-                                                    googleMapsApiKey: googleMapsApiKey,
-                                                    cardOptions: options,
-                                                    initialFlow: .fullSDK)
-        launchFundingPage(from: from, card: card, launchOptions: launchOptions, completion: completion)
+        launchFundingPage(from: from, card: card, completion: completion)
+    }
+    
+    // swiftlint:disable:next function_parameter_count
+    @objc public func showFundingPage(from: UIViewController,
+                                      card: Card,
+                                          mode: AptoUISDKMode,
+                                          completion: @escaping (_ module: UIModule?, _ error: NSError?) -> Void) {
+        
+        launchFundingPage(from: from, card: card) { result in
+            switch result {
+            case .failure(let error):
+                completion(nil, error)
+            case .success(let module):
+                completion(module, nil)
+            }
+        }
     }
     
     private func launchFundingPage(from: UIViewController, card: Card,
-                                launchOptions: CardModuleLaunchOptions,
                                 completion: @escaping (Result<UIModule, NSError>.Callback)) {
-        _googleMapsApiKey = launchOptions.googleMapsApiKey
+//        _googleMapsApiKey = launchOptions.googleMapsApiKey
         setUpUINotificationObservers()
-        setCardOptions(launchOptions.cardOptions)
+//        setCardOptions(launchOptions.cardOptions)
         registerCustomFonts()
         fetchContextConfiguration { [weak self] result in
             guard let self = self else { return }
@@ -336,18 +341,13 @@ extension AptoPlatform {
             case .failure(let error):
                 completion(.failure(error))
             case .success(let contextConfiguration):
-                let initializationData = InitializationData(userMetadata: launchOptions.initializationData?.userMetadata,
-                                                            cardMetadata: launchOptions.initializationData?.cardMetadata,
-                                                            custodianId: launchOptions.initializationData?.custodianId,
-                                                            design: launchOptions.initializationData?.design)
                 let fundingModule = FundingSourceSelectorModule(serviceLocator: ServiceLocator.shared, card: card)
                 self.initialModule = fundingModule
                 fundingModule.onClose = { [weak self, unowned from] module in
                     from.dismiss(animated: true) {}
                     self?.initialModule = nil
                 }
-                let uiConfig = UIConfig(projectConfiguration: contextConfiguration.projectConfiguration,
-                                        fontCustomizationOptions: launchOptions.cardOptions?.fontCustomizationOptions)
+                let uiConfig = UIConfig(projectConfiguration: contextConfiguration.projectConfiguration)
                 fundingModule.serviceLocator.uiConfig = uiConfig
                 from.present(module: fundingModule, animated: true, leftButtonMode: .close, uiConfig: uiConfig) { result in
                     switch result {
