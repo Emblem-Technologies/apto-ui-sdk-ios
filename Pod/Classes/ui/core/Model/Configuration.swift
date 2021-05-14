@@ -89,7 +89,7 @@ open class ProjectConfiguration {
        summary: String? = "Banking designed by Creators",
        allowUserLogin: Bool = true,
        primaryAuthCredential: DataPointType = .phoneNumber,
-       secondaryAuthCredential: DataPointType = .email,
+       secondaryAuthCredential: DataPointType = .birthDate,
        skipSteps: Bool = false,
        strictAddressValidation: Bool = true,
        defaultCountryCode: Int = 1,

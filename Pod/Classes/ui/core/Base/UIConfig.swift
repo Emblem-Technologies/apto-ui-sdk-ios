@@ -77,8 +77,9 @@ public enum StatusBarStyle: String, Equatable {
   private let textDisabledAlpha: CGFloat = 0.3
   public lazy var textLinkColor = UIColor.dynamicColor(light: lightBranding.textLinkColor,
                                                        dark: darkBranding.textLinkColor)
-  public lazy var textPrimaryColor = UIColor.dynamicColor(light: lightBranding.textPrimaryColor,
-                                                          dark: darkBranding.textPrimaryColor)
+//  public lazy var textPrimaryColor = UIColor.dynamicColor(light: lightBranding.textPrimaryColor,
+//                                                          dark: darkBranding.textPrimaryColor)
+    public lazy var textPrimaryColor = UIColor.label
   public var textPrimaryColorDisabled: UIColor { textPrimaryColor.withAlphaComponent(textDisabledAlpha) }
   public lazy var textSecondaryColor = UIColor.dynamicColor(light: lightBranding.textSecondaryColor,
                                                             dark: darkBranding.textSecondaryColor)
